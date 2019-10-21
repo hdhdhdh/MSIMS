@@ -1,4 +1,4 @@
 package cn.edu.whut.msims.dao;
 
-public class SysmPreveDao {
+public interface SysmPreveDao {
 }
