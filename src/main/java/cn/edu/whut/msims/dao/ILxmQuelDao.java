@@ -1,8 +1,11 @@
 package cn.edu.whut.msims.dao;
 
 import cn.edu.whut.msims.bean.LxmQuelInfo;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
+@Component
 
 public interface ILxmQuelDao {
     public List<LxmQuelInfo> findExpiredQuel();//查找已经过期的证书
