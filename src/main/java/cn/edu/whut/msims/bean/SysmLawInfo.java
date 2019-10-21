@@ -2,6 +2,7 @@ package cn.edu.whut.msims.bean;
 
 import java.util.Date;
 
+import cn.edu.whut.msims.dao.SysmLawDao;
 public class SysmLawInfo {
     private  String law_num;//发文字号
     private  String law_class;//法律法规类别
