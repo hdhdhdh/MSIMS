@@ -1,4 +1,6 @@
 package cn.edu.whut.msims.bean;
 
-public class xx {
+public class DnmDnInfo {
+
 }
+
