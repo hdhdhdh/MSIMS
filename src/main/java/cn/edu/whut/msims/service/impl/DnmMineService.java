@@ -3,10 +3,13 @@ package cn.edu.whut.msims.service.impl;
 import cn.edu.whut.msims.bean.DnmMineInfo;
 import cn.edu.whut.msims.dao.DnmMineDao;
 import cn.edu.whut.msims.service.IDnmMineService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class DnmMineService implements IDnmMineService {
 
-
+@Autowired
     private DnmMineDao dnmMineDao;
 
     @Override
