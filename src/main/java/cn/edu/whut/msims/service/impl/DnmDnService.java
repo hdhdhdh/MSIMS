@@ -3,10 +3,12 @@ package cn.edu.whut.msims.service.impl;
 import cn.edu.whut.msims.bean.DnmDnInfo;
 import cn.edu.whut.msims.dao.DnmDnDao;
 import cn.edu.whut.msims.service.IDnmDnService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-
+@Service
 public class DnmDnService implements IDnmDnService {
-
+@Autowired
     private DnmDnDao dnmDnDao;
 
     @Override
