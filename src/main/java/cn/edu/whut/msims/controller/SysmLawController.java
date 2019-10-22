@@ -41,4 +41,25 @@ public class SysmLawController {
         model.addAttribute("sysmLawInfos",sysmLawInfos);
         return "";
     }
+
+    //增加安全生产法律法规
+    @RequestMapping(value = "",method = RequestMethod.GET)
+    public String addLaw(SysmLawInfo sysmLawInfo){
+        sysmLawService.addLaw(sysmLawInfo);
+        return "";
+    }
+
+    //删除安全生产法律法规
+    @RequestMapping(value = "",method = RequestMethod.GET)
+    public String delLaw(String law_num){
+        sysmLawService.delLaw(law_num);
+        return "";
+    }
+
+    //更新安全生产法律法规
+    @RequestMapping(value = "",method = RequestMethod.GET)
+    public String updateLaw(SysmLawInfo sysmLawInfo){
+        sysmLawService.updateLaw(sysmLawInfo);
+        return "";
+    }
 }
