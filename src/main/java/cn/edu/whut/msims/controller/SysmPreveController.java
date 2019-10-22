@@ -17,7 +17,7 @@ public class SysmPreveController {
     private SysmPreveService sysmPreveService;
 
     //查询所有双重预防机制文件
-    @RequestMapping(value = "",method = RequestMethod.GET)
+    //@RequestMapping(value = "",method = RequestMethod.GET)
     public String findAllPreve(Model model){
         List<SysmPreveInfo> sysmPreveInfos=null;
         sysmPreveInfos=sysmPreveService.findAllPreve();
@@ -26,7 +26,7 @@ public class SysmPreveController {
     }
 
     //通过发文字号查询双重预防机制文件
-    @RequestMapping(value = "",method = RequestMethod.GET)
+   // @RequestMapping(value = "",method = RequestMethod.GET)
     public String findPreveById(String preve_num,Model model){
         SysmPreveInfo sysmPreveInfo=null;
         System.out.println(preve_num);
@@ -43,21 +43,21 @@ public class SysmPreveController {
     }
 
     //增加双重预防机制文件
-    @RequestMapping(value = "",method = RequestMethod.GET)
+    //@RequestMapping(value = "",method = RequestMethod.GET)
     public String addPreve(SysmPreveInfo sysmPreveInfo){
         sysmPreveService.addPreve(sysmPreveInfo);
         return "";
     }
 
     //删除双重预防机制文件
-    @RequestMapping(value = "",method = RequestMethod.GET)
+   // @RequestMapping(value = "",method = RequestMethod.GET)
     public String delPreve(String law_num){
         sysmPreveService.delPreve(law_num);
         return "";
     }
 
     //更新双重预防机制文件
-    @RequestMapping(value = "",method = RequestMethod.GET)
+   // @RequestMapping(value = "",method = RequestMethod.GET)
     public String updateLaw(SysmPreveInfo sysmpreveInfo){
         sysmPreveService.updatePreve(sysmpreveInfo);
         return "";

@@ -17,7 +17,7 @@ public class SysmLawController {
     private SysmLawService sysmLawService;
 
     //查询所有安全生产法律法规
-    @RequestMapping(value = "",method = RequestMethod.GET)
+   // @RequestMapping(value = "",method = RequestMethod.GET)
     public String findAllLaw(Model model){
         List<SysmLawInfo> sysmLawInfos=null;
         sysmLawInfos=sysmLawService.findAllLaw();
@@ -26,7 +26,7 @@ public class SysmLawController {
     }
 
     //通过发文字号查询安全生产法律法规
-    @RequestMapping(value = "",method = RequestMethod.GET)
+   // @RequestMapping(value = "",method = RequestMethod.GET)
     public String findLawById(String law_num,Model model){
         SysmLawInfo sysmLawInfo=null;
         System.out.println(law_num);
@@ -43,21 +43,21 @@ public class SysmLawController {
     }
 
     //增加安全生产法律法规
-    @RequestMapping(value = "",method = RequestMethod.GET)
+    //@RequestMapping(value = "",method = RequestMethod.GET)
     public String addLaw(SysmLawInfo sysmLawInfo){
         sysmLawService.addLaw(sysmLawInfo);
         return "";
     }
 
     //删除安全生产法律法规
-    @RequestMapping(value = "",method = RequestMethod.GET)
+   // @RequestMapping(value = "",method = RequestMethod.GET)
     public String delLaw(String law_num){
         sysmLawService.delLaw(law_num);
         return "";
     }
 
     //更新安全生产法律法规
-    @RequestMapping(value = "",method = RequestMethod.GET)
+    //@RequestMapping(value = "",method = RequestMethod.GET)
     public String updateLaw(SysmLawInfo sysmLawInfo){
         sysmLawService.updateLaw(sysmLawInfo);
         return "";
