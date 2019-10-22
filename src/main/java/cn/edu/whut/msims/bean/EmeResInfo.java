@@ -1,11 +1,11 @@
 package cn.edu.whut.msims.bean;
 
 public class EmeResInfo {
-    private String rescue_num;
-    private String rescue_name;
-    private String rescue_duty;
-    private String rescue_tel;
-    private String instit_num;
+    private String rescue_num;//应急救援人员编号
+    private String rescue_name;//姓名
+    private String rescue_duty;//职务
+    private String rescue_tel;//电话
+    private String instit_num;//所在机构
 
     public String getRescue_num() {
         return rescue_num;

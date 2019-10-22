@@ -3,14 +3,14 @@ package cn.edu.whut.msims.bean;
 import java.util.Date;
 
 public class EmeDirInfo {
-    private String dirll_num;
-    private String dirll_name;
-    private String dirll_year;
-    private String employ_num;
-    private String admin_id;
-    private Date dirll_date;
-    private String dirll_note;
-    private String dirll_path;
+    private String dirll_num; //演练编号
+    private String dirll_name;//计划名称
+    private String dirll_year;//年度
+    private String employ_num;//负责人
+    private String admin_id;  //上传人
+    private Date dirll_date;  //上传时间
+    private String dirll_note;//备注
+    private String dirll_path;//上传文件
 
     public String getDirll_num() {
         return dirll_num;

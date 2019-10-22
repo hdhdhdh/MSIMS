@@ -3,12 +3,12 @@ package cn.edu.whut.msims.bean;
 import java.util.Date;
 
 public class EmeResouInfo {
-    private String resou_num;
-    private String resou_name;
-    private String resou_amount;
-    private Date resou_date;
-    private String resou_note;
-    private String instit_num;
+    private String resou_num;//物资编号
+    private String resou_name;//物资名称
+    private String resou_amount;//物资数量
+    private Date resou_date;    //有效期
+    private String resou_note;  //备注
+    private String instit_num;  //机构编号
 
     public String getResou_num() {
         return resou_num;
