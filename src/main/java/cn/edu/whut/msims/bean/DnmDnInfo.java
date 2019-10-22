@@ -1,12 +1,12 @@
 package cn.edu.whut.msims.bean;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class DnmDnInfo {
     private int duno_num;
     private String site_id;
     private double duno_dust1;
-    private double dunno_dust2;
+    private double duno_dust2;
     private double duno_dust3;
     private double duno_dusta;
     private double duno_noise1;
@@ -41,12 +41,12 @@ public class DnmDnInfo {
         this.duno_dust1 = duno_dust1;
     }
 
-    public double getDunno_dust2() {
-        return dunno_dust2;
+    public double getDuno_dust2() {
+        return duno_dust2;
     }
 
-    public void setDunno_dust2(double dunno_dust2) {
-        this.dunno_dust2 = dunno_dust2;
+    public void setDuno_dust2(double dunno_dust2) {
+        this.duno_dust2 = dunno_dust2;
     }
 
     public double getDuno_dust3() {
@@ -127,7 +127,7 @@ public class DnmDnInfo {
                 "duno_num=" + duno_num +
                 ", site_id='" + site_id + '\'' +
                 ", duno_dust1=" + duno_dust1 +
-                ", dunno_dust2=" + dunno_dust2 +
+                ", dunno_dust2=" + duno_dust2 +
                 ", duno_dust3=" + duno_dust3 +
                 ", duno_dusta=" + duno_dusta +
                 ", duno_noise1=" + duno_noise1 +

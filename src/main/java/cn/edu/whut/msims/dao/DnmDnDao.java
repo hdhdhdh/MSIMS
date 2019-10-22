@@ -4,14 +4,14 @@ import cn.edu.whut.msims.bean.DnmDnInfo;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 @Component
 @Mapper
 public interface DnmDnDao {
     @Insert("insert into tb_duno(site_id,duno_dust1,duno_dust2,duno_dust3,duno_dusta,duno_noise1,duno_noise2,duno_noise3,duno_noisea,duno_room,duno_name,duno_date)values(#{site_id},#{duno_dust1},#{duno_dust2},#{duno_dust3},#{duno_dusta},#{duno_noise1},#{duno_noise2},#{duno_noise3},#{duno_noisea},#{duno_room},#{duno_name},#{duno_date})")
-    public void addDnmDn(@Param("dnmDnInfo") DnmDnInfo dnmDnInfo); //增加
+    public void addDnmDn(DnmDnInfo dnmDnInfo); //增加
 
     @Select("select * from tb_duno where duno_date = #{duno_date}")
     public List<DnmDnInfo> finddateDnmDn(@Param("duno_date")Date duno_date); //根据时间查询所有的记录
