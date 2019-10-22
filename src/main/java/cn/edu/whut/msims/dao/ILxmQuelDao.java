@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 @Component
-
+@Mapper
 public interface ILxmQuelDao {
     public List<LxmQuelInfo> findExpiredQuel();//查找已经过期的证书
     public List<LxmQuelInfo> findExpiringQuel();//查找即将过期的证书
