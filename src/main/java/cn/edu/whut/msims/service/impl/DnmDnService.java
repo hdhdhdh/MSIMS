@@ -13,19 +13,19 @@ public class DnmDnService implements IDnmDnService {
 
     @Override
     public void addDnmDn(DnmDnInfo dnmDnInfo) {
-//        dnmDnDao.addDnmDn(dnmDnInfo);
+       dnmDnDao.addDnmDn(dnmDnInfo);
 
     }
 
     @Override
     public void deleteDnmDn(int duno_num) {
-//        dnmDnDao.deleteDnmDn(duno_num);
+       dnmDnDao.deleteDnmDn(duno_num);
 
     }
 
     @Override
-    public void updateDnmDn(DnmDnInfo dnmDnInfo) {
-//        dnmDnDao.updateDnmDn(dnmDnInfo);
+    public void updateDnmDn(DnmDnInfo dnmDnInfo,int duno_num) {
+      dnmDnDao.updateDnmDn(dnmDnInfo,duno_num);
 
     }
 }

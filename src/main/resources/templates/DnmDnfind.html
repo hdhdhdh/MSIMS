@@ -111,7 +111,7 @@
             </tr>
             </thead>
             <tbody>
-            <c:forEach var="dnmdn" items="${ps.list}">
+            <c:forEach var="d" items="${ps.list}">
                 <td>${dnmdn.duno_num}</td>
                 <td>${dnmdn.site_id}</td>
                 <td>${dnmdn}</td>
@@ -129,8 +129,8 @@
 
 
                 <td class="text-center">
-                    <a href="${pageContext.request.contextPath}/user/toUpdateUser.do?id=${userInfo.id}" class="btn bg-olive btn-xs">更新</a>
-                    <a href="${pageContext.request.contextPath}/user/todeleteUser.do?id=${userInfo.id}" class="btn bg-olive btn-xs">删除</a>
+                    <a href="" class="btn bg-olive btn-xs">更新</a>
+                    <a href="" class="btn bg-olive btn-xs">删除</a>
 
                 </td>
 

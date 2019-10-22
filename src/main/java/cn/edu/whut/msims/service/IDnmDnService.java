@@ -9,5 +9,5 @@ public interface IDnmDnService {
 
     public void addDnmDn(DnmDnInfo dnmDnInfo);
     public void deleteDnmDn(int duno_num);
-    public void updateDnmDn(DnmDnInfo dnmDnInfo);
+    public void updateDnmDn(DnmDnInfo dnmDnInfo,int duno_num);
 }
