@@ -15,9 +15,4 @@ public interface SysmLawDao {
     public int addLaw(SysmLawInfo sysmLawInfo);//增加安全生产法律法规
     public void delLaw(String law_num);//删除安全生产法律法规
     public int updateLaw(SysmLawInfo sysmLawInfo);//更新安全生产法律法规
-
-
-
-
-
 }
