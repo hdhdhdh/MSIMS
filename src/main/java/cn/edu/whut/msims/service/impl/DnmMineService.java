@@ -12,19 +12,19 @@ public class DnmMineService implements IDnmMineService {
 
     @Override
     public void addDnmMine(DnmMineInfo dnmMineInfo) {
-        dnmMineDao.addDnmMine(dnmMineInfo);
+//        dnmMineDao.addDnmMine(dnmMineInfo);
 
     }
 
     @Override
     public void deleteDnmMine(int mine_num) {
-        dnmMineDao.deleteDnmMine(mine_num);
+//        dnmMineDao.deleteDnmMine(mine_num);
 
     }
 
     @Override
     public void updateDnmMine(DnmMineInfo dnmMineInfo) {
 
-        dnmMineDao.updateDnmMine(dnmMineInfo);
+//        dnmMineDao.updateDnmMine(dnmMineInfo);
     }
 }

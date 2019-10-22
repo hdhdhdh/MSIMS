@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <title>粉尘、噪音浓度检测</title>
-    <style type='text/css'>
+    <style>
 
 
         #box{
             width:1000px;
             margin:0 auto;
-            font-size:0;
+            font-size:12px;
+
         }
         #logo{
             font-family: "幼圆";
@@ -49,7 +50,7 @@
             display:inline-block;
             width:800px;
             height:500px;
-            /*background-color: antiquewhite;*/
+            background-color: antiquewhite;
 
             float:left;
 
@@ -65,20 +66,15 @@
         }
 
         input{
-            border-radius: 5px;
-            width: 200px;
+
+
+
             height: 25px;
             margin-top: 10px;
             margin-right: auto;
 
         }
 
-        #pt{
-            color: red;
-            display: inline-block;
-            width: 100px;
-            color: #885886;
-        }
 
 
 
@@ -99,21 +95,24 @@
             <li><a href="#">返回至主界面</a> </li>
         </ul>
     </div>
+
     <div id='main'>
         <h2>新增采样记录</h2>
+        <table border="1">
 
         <form method="post" action="">
-            <p>采样点:<input TYPE="text" NAME="site_id" id="site_id" placeholder="采样点"></p>
-            <p>粉尘一号检测项<input TYPE="text" NAME="duno_dust1" id="duno_dust1" placeholder="粉尘一号检测项"></p>
-            <p>粉尘二号检测项<input TYPE="text" NAME="duno_dust2" id="duno_dust2" placeholder="粉尘二号检测项"></p>
-            <p>粉尘三号检测项<input TYPE="text" NAME="duno_dust2" id="duno_dust3" placeholder="粉尘三号检测项"></p>
-            <p>噪声一号检测项<input TYPE="text" NAME="duno_dust2" id="duno_noise1" placeholder="噪声一号检测项"></p>
-            <p>噪声二号检测项<input TYPE="text" NAME="duno_dust2" id="duno_noise2" placeholder="噪声二号检测项"></p>
-            <p>噪声三号检测项<input TYPE="text" NAME="duno_dust2" id="duno_noise3" placeholder="噪声三号检测项"></p>
-            <p>检测人<input TYPE="text" NAME="duno_dust2" id="duno_name" placeholder="检测人"></p>
-            <p>检测日期<input TYPE="date" NAME="duno_dust2" id="duno_date" placeholder="检测日期"></p>
+            <p>采样点:<input size="5px" TYPE="text" NAME="site_id" id="site_id" ></p>
+            <p>粉尘一号检测项<input size="3px" TYPE="text" NAME="duno_dust1" id="duno_dust1" >
+            粉尘二号检测项<input width="3px" TYPE="text" NAME="duno_dust2" id="duno_dust2" >
+            粉尘三号检测项<input width="3px" TYPE="text" NAME="duno_dust2" id="duno_dust3" ></p>
+            <p>噪声一号检测项<input TYPE="text" NAME="duno_dust2" id="duno_noise1" ></p>
+            <p>噪声二号检测项<input TYPE="text" NAME="duno_dust2" id="duno_noise2" ></p>
+            <p>噪声三号检测项<input TYPE="text" NAME="duno_dust2" id="duno_noise3" ></p>
+            <p>检测人<input TYPE="text" NAME="duno_dust2" id="duno_name" ></p>
+            <p>检测日期<input TYPE="date" NAME="duno_dust2" id="duno_date" ></p>
 
         </form>
+        </table>
 
     </div>
 
