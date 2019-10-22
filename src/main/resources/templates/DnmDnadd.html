@@ -9,7 +9,7 @@
         #box{
             width:1000px;
             margin:0 auto;
-            font-size:12px;
+            font-size:14px;
 
         }
         #logo{
@@ -74,7 +74,28 @@
             margin-right: auto;
 
         }
-
+        input[type="submit"]{
+            width:70px;
+            height: 30px;
+            font-size: 15px;
+            font-family:幼圆;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #f3f5fa;
+            color: #9549ff;
+        }
+        input[type="reset"]{
+            width:70px;
+            height: 30px;
+            font-size: 15px;
+            font-family:幼圆;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #f3f5fa;
+            color: #9549ff;
+        }
 
 
 
@@ -98,21 +119,22 @@
 
     <div id='main'>
         <h2>新增采样记录</h2>
-        <table border="1">
+
 
         <form method="post" action="">
-            <p>采样点:<input size="5px" TYPE="text" NAME="site_id" id="site_id" ></p>
-            <p>粉尘一号检测项<input size="3px" TYPE="text" NAME="duno_dust1" id="duno_dust1" >
-            粉尘二号检测项<input size="3px" TYPE="text" NAME="duno_dust2" id="duno_dust2" >
-            粉尘三号检测项<input size="3px" TYPE="text" NAME="duno_dust2" id="duno_dust3" ></p>
-            <p>噪声一号检测项<input TYPE="text" NAME="duno_dust2" id="duno_noise1" ></p>
-            <p>噪声二号检测项<input TYPE="text" NAME="duno_dust2" id="duno_noise2" ></p>
-            <p>噪声三号检测项<input TYPE="text" NAME="duno_dust2" id="duno_noise3" ></p>
-            <p>检测人<input TYPE="text" NAME="duno_dust2" id="duno_name" ></p>
-            <p>检测日期<input TYPE="date" NAME="duno_dust2" id="duno_date" ></p>
+            <p>采样点ID:&nbsp;<input size="5px" TYPE="text" NAME="site_id" id="site_id" ></p>
+            <p>粉尘一号检测项:&nbsp;<input size="3px" TYPE="text" NAME="duno_dust1" id="duno_dust1" >
+                &nbsp;&nbsp;&nbsp;粉尘二号检测项:&nbsp;<input size="3px" TYPE="text" NAME="duno_dust2" id="duno_dust2" >
+                &nbsp;&nbsp;&nbsp;粉尘三号检测项:&nbsp;<input size="3px" TYPE="text" NAME="duno_dust2" id="duno_dust3" ></p>
+            <p>噪声一号检测项:&nbsp;<input size="3px" TYPE="text" NAME="duno_dust2" id="duno_noise1" >
+                &nbsp;&nbsp;&nbsp;噪声二号检测项:&nbsp;<input size="3px" TYPE="text" NAME="duno_dust2" id="duno_noise2" >
+                &nbsp;&nbsp;&nbsp;噪声三号检测项:&nbsp;<input size="3px" TYPE="text" NAME="duno_dust2" id="duno_noise3" ></p>
+            <p>检测人:&nbsp;<input size="8px" TYPE="text" NAME="duno_dust2" id="duno_name" ></p>
+            <p>检测日期:&nbsp;<input size="10px" TYPE="date" NAME="duno_dust2" id="duno_date" ></p>
+           <input type="submit" value="添&nbsp;&nbsp;加" name="dnm_add" id="dnm_add"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="重&nbsp;&nbsp;置">
 
         </form>
-        </table>
+
 
     </div>
 
