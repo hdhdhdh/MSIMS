@@ -14,16 +14,16 @@ public interface DnmDnDao {
     public void addDnmDn(DnmDnInfo dnmDnInfo); //增加
 
     @Select("select * from tb_duno where duno_date = #{duno_date}")
-    public List<DnmDnInfo> finddateDnmDn(@Param("duno_date")Date duno_date); //根据时间查询所有的记录
+    public List<DnmDnInfo> finddateDnmDn(Date duno_date); //根据时间查询所有的记录
 
     @Select("select * from tb_duno where site_id = #{site_id}")
-    public List<DnmDnDao> findidDnmDn(@Param("site_id")String site_id);  //根据采样点ID查询所有的记录
+    public List<DnmDnDao> findidDnmDn(String site_id);  //根据采样点ID查询所有的记录
 
     @Delete("delete from tb_duno where duno_num = #{duno_num}")
-    public void deleteDnmDn(@Param("duno_num") int duno_num);  //删除
+    public void deleteDnmDn( int duno_num);  //删除
 
     @Update("update tb_duno set site_id = #{site_id},site_id = #{site_id},duno_dust2 = #{duno_dust2},duno_dust3 = #{duno_dust3},duno_dusta = #{duno_dusta},duno_noise1 = #{duno_noise1},duno_noise2 = #{duno_noise2},duno_noise3 = #{duno_noise3},duno_noisea = #{duno_noisea},duno_room = #{duno_room},duno_name = #{duno_name},duno_date = #{duno_date} where duno_num = #{duno_num}")
-    public void updateDnmDn(@Param("dnmDnInfo duno_num") DnmDnInfo dnmDnInfo,int duno_num);  //更新
+    public void updateDnmDn( DnmDnInfo dnmDnInfo,int duno_num);  //更新
 
 
 }

@@ -91,6 +91,26 @@
             text-decoration: none;
             font-weight: bold;
         }
+        ul{
+            margin-bottom: 0;
+            margin-top:auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 100px;
+            list-style: none;
+            align-items: center;
+            text-align: center;
+        }
+
+        li{
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            font-size: 16px;
+            float: left;
+            margin: 10px;
+        }
 
 
     </style>
@@ -110,11 +130,11 @@
     </div>
     <div id='main'>
         <h2>查询采样记录</h2>
-        <form action="" method="post">
-            <p>输入采样点ID:&nbsp;<input size="7px" type="text" name="finddnid" id="finddnid">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="搜&nbsp;&nbsp;索"></p>
+        <form action="${pageContext.request.contextPath}/dnm/dnidfind.do" method="post">
+            <p>输入采样点ID:&nbsp;<input size="7px" type="text" name="site_id" id="site_id">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="搜&nbsp;&nbsp;索"></p>
         </form>
         <form action="" method="post">
-            <p>输入时间日期:&nbsp;<input size="7px" type="text" name="finddndate" id="finddndate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="搜&nbsp;&nbsp;索"></p>
+            <p>输入时间日期:&nbsp;<input size="7px" type="text" name="duno_date" id="duno_date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="搜&nbsp;&nbsp;索"></p>
         </form>
         <table border="1">
             <thead>
@@ -148,9 +168,18 @@
 
             </c:forEach>
 
-
             </tbody>
         </table>
+
+        <ul >
+            <li><a href="">首页</a></li>
+            <li><a href="">上一页</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">下一页</a></li>
+            <li><a href="">尾页</a></li>
+        </ul>
 
 
     </div>

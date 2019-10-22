@@ -50,6 +50,17 @@ public class DnmDnController {
         return ("DnmDnmain");
     }
 
+//    @RequestMapping("/dnidfind.do") //通过采样点id查询所有的记录
+//    public String dnmdn_idfind(String site_id){
+//
+//    }
+
+    @RequestMapping("/dndelete.do") //删除记录
+    public String dnmdn_delete(int duno_num){
+        iDnmDnService.deleteDnmDn(duno_num);
+        return "redirect:";
+    }
+
 
 
 }

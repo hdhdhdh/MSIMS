@@ -6,6 +6,8 @@ import cn.edu.whut.msims.service.IDnmDnService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class DnmDnService implements IDnmDnService {
 @Autowired
@@ -27,5 +29,10 @@ public class DnmDnService implements IDnmDnService {
     public void updateDnmDn(DnmDnInfo dnmDnInfo,int duno_num) {
       dnmDnDao.updateDnmDn(dnmDnInfo,duno_num);
 
+    }
+
+    @Override
+    public List<DnmDnDao> findidDnmDn(String site_id) {
+        return dnmDnDao.findidDnmDn(site_id);
     }
 }
