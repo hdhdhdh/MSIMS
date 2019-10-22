@@ -1,16 +1,13 @@
 spring:
-  datasource:
+    mvc:
+      view:
+        prefix: /WEB-INF/page/
+        suffix: .jsp
+    datasource:
       url: jdbc:mysql://127.0.0.1:3306/db_mine?characterEncoding=UTF-8
       username: root
-      password: 1234
+      password: 123456
       driver-class-name: com.mysql.jdbc.Driver
-
-  mybatis:
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-  mvc:
-    view:
-      prefix: /WEB-INF/page
-      suffix: .jsp
+      jpa:
+        hibernate:
+          ddl-auto: update
