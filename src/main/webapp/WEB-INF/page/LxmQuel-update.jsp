@@ -45,7 +45,7 @@
             <div>
                 <label for="quelnum" class="text-label1">证书编号</label>
                 <input class="text-label2" type="text" name="quelnum" id="quelnum" required="required"
-                       value="${#.id}" size="30" readonly="readonly">
+                       value="${user.id}" size="30" readonly="readonly">
             </div>
             <div>
                 <label for="quelclass" class="text-label1">证书类型</label>
