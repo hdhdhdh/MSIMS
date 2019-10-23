@@ -42,8 +42,8 @@ public class LxmQualService implements ILxmQualService
     }
 
     @Override
-    public int deleteQualByNum(String quel_num) {
-        return lxmQualDao.deleteQualByNum(quel_num);
+    public void deleteQualByNum(String qual_num) {
+         lxmQualDao.deleteQualByNum(qual_num);
     }
 
 }

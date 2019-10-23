@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,19 +28,19 @@
         <ul id="nav" class="nav clearfix">
             <li class="nLi on" style="border-left: 0;">
                 <h1>
-                    <a href="LxmExpireQual.jsp" target="_blank">公司资质证书预警</a>
+                    <a href="${pageContext.request.contextPath}/Lxm/expirequal.do" target="_blank">公司资质证书预警</a>
                 </h1>
             </li>
             <li class="nLi">
                 <h1>
-                    <a href="LxmQual-list.jsp" target="_blank">公司资质证书管理</a>
+                    <a href="${pageContext.request.contextPath}/Lxm/findAll.do" target="_blank">公司资质证书管理</a>
                 </h1>
             </li>
         </ul>
     </div>
 </div>
 <div class="section">
-    <form method="post" action="#" name="findquel" class="text-form">
+    <form method="post" action="${pageContext.request.contextPath}/Lxm/addqual.do" name="findquel" class="text-form">
         <div>
             <label for="findquelnum" class="text-label3">请输入证书编号</label>
             <input class="text-label2" type="text" name="findquelnum" id="findquelnum" required="required" placeholder="证书编号长度5位" size="30">
@@ -62,20 +63,20 @@
         </tr>
         </thead>
         <tbody>
-        <c:forEach var="#" items="${ps.list}">
+        <c:forEach var="user" items="${lxmQualInfos}">
             <tr>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td >
-                    <a href="LxmQual-update.jsp" class="quelbtn">更改</a>
-                    <a href="LxmQual-list.jsp" class="quelbtn">删除</a>
-                    <a href="LxmQual-add.jsp" class="quelbtn">添加证书</a>
+                <td>${user.qual_num}</td>
+                <td>${user.qual_class}</td>
+                <td>${user.qual_sdate}</td>
+                <td>${user.qual_edate}</td>
+                <td>${user.qual_office}</td>
+                <td>${user.qual_time}</td>
+                <td>${user.admin_id}</td>
+                <td>${user.qual_date}</td>
+                <td>
+                    <a href="${pageContext.request.contextPath}/Lxm/toupdatequal.do?qual_num=${user.qual_num}" class="quelbtn">更改</a>
+                    <a href="${pageContext.request.contextPath}/Lxm/deletequal.do?qual_num=${user.qual_num}" class="quelbtn">删除</a>
+                    <a href="${pageContext.request.contextPath}/Lxm/toaddqual.do" class="quelbtn">添加证书</a>
                 </td>
             </tr>
         </c:forEach>
