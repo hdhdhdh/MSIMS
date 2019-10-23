@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -35,27 +36,28 @@ public class SysmLawController {
         return "SysmLawadd";
     }
 
-    @RequestMapping("/todlawfind.do") //跳转查询记录界面
+    @RequestMapping("/tolawfind.do") //跳转查询记录界面
     public  String sysmlaw_tofind(){
         return "SysmLawfind";
     }
 
-    @RequestMapping("/tolawupdate.do")   //跳转新增记录界面
+    @RequestMapping("/tolawupdate.do")   //跳转更新记录界面
     public  String sysmlaw_toupdate(){
-        return "SysmLawdate";
+        return "SysmLawupdate";
     }
 
     //查询所有安全生产法律法规
-    @RequestMapping("/lawadd.do")
-    public String findAllLaw(Model model){
-        List<SysmLawInfo> sysmLawInfos=null;
-        sysmLawInfos=sysmLawService.findAllLaw();
-        model.addAttribute("sysmLawInfos",sysmLawInfos);
-        return "SysmMain";
+    @RequestMapping("/lawfindall.do")
+    public ModelAndView findAllLaw(){
+        ModelAndView mv=new ModelAndView();
+        List<SysmLawInfo> sysmLawInfos=sysmLawService.findAllLaw();
+        mv.addObject("sysmLawInfos",sysmLawInfos);
+        mv.setViewName("SysmLawfind");
+        return mv;
     }
 
     //通过发文字号查询安全生产法律法规
-   // @RequestMapping(value = "",method = RequestMethod.GET)
+   @RequestMapping("/lawfind.do")
     public String findLawById(String law_num,Model model){
         SysmLawInfo sysmLawInfo=null;
         System.out.println(law_num);
@@ -72,24 +74,24 @@ public class SysmLawController {
     }
 
     //增加安全生产法律法规
-    //@RequestMapping(value = "",method = RequestMethod.GET)
+    @RequestMapping("/lawadd.do")
     public String addLaw(SysmLawInfo sysmLawInfo){
         sysmLawService.addLaw(sysmLawInfo);
-        return "";
+        return "redirect:lawfindall.do";
     }
 
     //删除安全生产法律法规
-   // @RequestMapping(value = "",method = RequestMethod.GET)
+    @RequestMapping("/lawdelete.do")
     public String delLaw(String law_num){
         sysmLawService.delLaw(law_num);
-        return "";
+        return "redirect:lawfindall.do";
     }
 
     //更新安全生产法律法规
-    //@RequestMapping(value = "",method = RequestMethod.GET)
-    public String updateLaw(SysmLawInfo sysmLawInfo){
-        sysmLawService.updateLaw(sysmLawInfo);
-        return "";
+    @RequestMapping("/lawupdate.do")
+    public String updateLaw(SysmLawInfo sysmLawInfo,String law_num){
+        sysmLawService.updateLaw(sysmLawInfo,law_num);
+        return  "redirect:lawfindall.do";
     }
 
     //上传文档

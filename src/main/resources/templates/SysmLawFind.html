@@ -117,14 +117,14 @@
     <div id='nav'>
         <ul>
 
-            <li><a href="SysmLawAdd.html">新增安全生产法律法规</a> </li>
+            <li><a href="${pageContext.request.contextPath}/sysm/lawadd.do">新增安全生产法律法规</a> </li>
             <li><a href="">查询安全生产法律法规</a> </li>
-            <li><a href="SysmMain.html">返回至主界面</a> </li>
+            <li><a href="${pageContext.request.contextPath}/sysm/main.do">返回至主界面</a> </li>
         </ul>
     </div>
     <div id='main'>
         <h2>查询安全生产法律法规</h2>
-        <form action="" method="post">
+        <form action="${pageContext.request.contextPath}/sysm/lawfind.do" method="post">
             <p>输入发文字号:&nbsp;<input size="7px" type="text" name="findLawnum" id="findLawnum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="搜&nbsp;&nbsp;索"></p>
         </form>
         <table border="1">

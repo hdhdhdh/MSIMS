@@ -110,8 +110,8 @@
         <ul>
 
             <li><a href="#">新增安全生产法律法规</a> </li>
-            <li><a href="SysmLawFind.html">查询安全生产法律法规</a> </li>
-            <li><a href="SysmMain.html">返回至主界面</a> </li>
+            <li><a href="${pageContext.request.contextPath}/sysm/tolawfind.do">查询安全生产法律法规</a> </li>
+            <li><a href="${pageContext.request.contextPath}/sysm/main.do">返回至主界面</a> </li>
         </ul>
     </div>
 
@@ -119,7 +119,7 @@
         <h2>新增安全生产法律法规</h2>
 
 
-        <form method="post" action="">
+        <form method="post" action="${pageContext.request.contextPath}/sysm/lawadd.do">
             <p>发文字号:&nbsp;<input size="20px" TYPE="text" NAME="law_num" id="law_num" ></p>
             <p>法律法规类别:&nbsp;<input size="10px" TYPE="text" NAME="law_class" id="law_class" >
                 &nbsp;&nbsp;&nbsp;法律法规标准名称:&nbsp;<input size="10px" TYPE="text" NAME="law_name" id="law_name" >
