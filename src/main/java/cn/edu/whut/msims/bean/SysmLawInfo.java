@@ -1,6 +1,6 @@
 package cn.edu.whut.msims.bean;
 
-import java.util.Date;
+import java.sql.Date;
 
 import cn.edu.whut.msims.dao.SysmLawDao;
 public class SysmLawInfo {
@@ -13,7 +13,7 @@ public class SysmLawInfo {
     private  String law_checker;//审核人
     private  Date law_checktime;//审核时间
     private  String law_note;//备注
-    private  String law_admin_id;//上传人
+    private  String admin_id;//上传人
     private  Date law_date;//上传时间
 
 
@@ -89,12 +89,12 @@ public class SysmLawInfo {
         this.law_note = law_note;
     }
 
-    public String getLaw_admin_id() {
-        return law_admin_id;
+    public String getadmin_id() {
+        return admin_id;
     }
 
-    public void setLaw_admin_id(String law_admin_id) {
-        this.law_admin_id = law_admin_id;
+    public void setadmin_id(String admin_id) {
+        this.admin_id = admin_id;
     }
 
     public Date getLaw_date() {
@@ -117,7 +117,7 @@ public class SysmLawInfo {
                 ", law_checker='" + law_checker + '\'' +
                 ", law_checktime=" + law_checktime +
                 ", law_note='" + law_note + '\'' +
-                ", law_admin_id='" + law_admin_id + '\'' +
+                ", admin_id='" + admin_id + '\'' +
                 ", law_date=" + law_date +
                 '}';
     }

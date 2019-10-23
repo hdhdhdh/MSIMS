@@ -15,26 +15,26 @@ public class SysmPreveService implements ISysmPreveService {
     @Override
     public List<SysmPreveInfo> findAllPreve()//查询所有双重预防机制文件
     {
-        return this.sysmPreveDao.findAllPreve();
+        return sysmPreveDao.findAllPreve();
     }
     @Override
     public SysmPreveInfo findPreveById(String preve_num)//通过发文字号查询双重预防机制文件
     {
-        return this.sysmPreveDao.findPreveById(preve_num);
+        return sysmPreveDao.findPreveById(preve_num);
     }
     @Override
     public  boolean addPreve(SysmPreveInfo sysmPreveInfo)//增加双重预防机制文件
     {
-        return this.sysmPreveDao.addPreve(sysmPreveInfo)>0 ? true:false;
+        return sysmPreveDao.addPreve(sysmPreveInfo)>0 ? true:false;
     }
     @Override
     public void delPreve(String preve_num)//删除双重预防机制文件
     {
-        this.sysmPreveDao.delPreve(preve_num);
+        sysmPreveDao.delPreve(preve_num);
     }
     @Override
     public boolean updatePreve(SysmPreveInfo sysmPreveInfo)//更新双重预防机制文件
     {
-        return this.sysmPreveDao.updatePreve(sysmPreveInfo)>0 ? true:false;
+        return sysmPreveDao.updatePreve(sysmPreveInfo)>0 ? true:false;
     }
 }

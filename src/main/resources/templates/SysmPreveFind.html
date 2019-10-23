@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>查询安全生产法律法规</title>
+    <style>
+
+
+        #box{
+            width:1200px;
+            margin:0 auto;
+
+
+        }
+        #logo{
+            font-family: "幼圆";
+            font-size: 20px;
+            color: #6cdbff;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        #nav {
+            border-radius: 15px;
+            display: inline-block;
+            width: 200px;
+            height: 250px;
+            float: left;
+            background-color: lightcyan;
+            margin-right: 0px;
+
+        }
+        #nav ul{
+            line-height: 20px;
+            list-style-type: none;
+            padding: 35px;
+            text-align: center;
+        }
+        #nav a{
+            text-decoration:none;
+            font-family: 幼圆;
+            color: #e722ff;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+        #main{
+            border-radius: 15px;
+            display:inline-block;
+            width:1000px;
+            height:600px;
+            background-color: antiquewhite;
+
+            float:left;
+            text-align: center;
+            align-items: center;
+            font-size: 15px;
+        }
+        h2{
+            font-size:25px;
+            font-family: 幼圆;
+            color: chartreuse;
+            text-align: center;
+
+        }
+        input[type="submit"]{
+            font-family:幼圆;
+            border-radius: 5px;
+
+        }
+        table{
+            margin: auto;
+            width: 920px;
+            border: 2px solid #faa5ff;
+            border-spacing: 0;
+            text-align: center;
+            font-family: 宋体;
+            border-radius: 5px;
+        }
+        a{
+            color: #791388;
+            font-family: 幼圆;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        ul{
+            margin-bottom: 0;
+            margin-top:auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 100px;
+            list-style: none;
+            align-items: center;
+            text-align: center;
+        }
+
+        li{
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            font-size: 16px;
+            float: left;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div id='box'>
+    <div id='logo'>
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;查询双重预防机制文件</h1>
+    </div>
+    <div id='nav'>
+        <ul>
+
+            <li><a href="SysmLawAdd.html">新增双重预防机制文件</a> </li>
+            <li><a href="">查询双重预防机制文件</a> </li>
+            <li><a href="SysmMain.html">返回至主界面</a> </li>
+        </ul>
+    </div>
+    <div id='main'>
+        <h2>查询双重预防机制文件</h2>
+        <form action="" method="post">
+            <p>输入发文字号:&nbsp;<input size="7px" type="text" name="findPrevenum" id="findPrevenum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="搜&nbsp;&nbsp;索"></p>
+        </form>
+        <table border="1">
+            <thead>
+            <tr>
+                <td>发文字号</td><td >文件名称:</td ><td>颁布部门</td><td >颁布时间</td><td >实施时间</td><td >上传文件</td><td >上传人</td><td >上传时间</td>
+            </tr>
+
+            </thead>
+            <tbody>
+            <c:forEach var="d" items="${}">
+                <td>${}</td>
+                <td>${}</td>
+                <td>${}</td>
+                <td>${}</td>
+                <td>${}</td>
+                <td>${}</td>
+                <td>${}</td>
+                <td>${}</td>
+
+                <td class="text-center">
+                    <a href="SysmLawUpdate.html" >更新</a>
+                    <a href="" >删除</a>
+                </td>
+
+            </c:forEach>
+
+
+            </tbody>
+        </table>
+
+        <ul >
+            <li><a href="">首页</a></li>
+            <li><a href="">上一页</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">下一页</a></li>
+            <li><a href="">尾页</a></li>
+        </ul>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>
