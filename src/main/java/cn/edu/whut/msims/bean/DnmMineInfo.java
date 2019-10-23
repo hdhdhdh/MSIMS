@@ -1,6 +1,6 @@
 package cn.edu.whut.msims.bean;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class DnmMineInfo {
     private int mine_num;

@@ -59,9 +59,9 @@
 <h3>&nbsp;</h3>
 <div class="box">
     <a href="${pageContext.request.contextPath}/dnm/dnmain.do"><button>粉尘、噪音浓度检测</button></a>
-    <a href="DnmMinemain.jsp"><button>井下有害气体检测</button></a>
-    <a href="DnmSitemain.jsp"><button>采样点管理</button></a>
-    <button>危害信息检测分析</button>
+    <a href="${pageContext.request.contextPath}/dnm/minemain.do"><button>井下有害气体检测</button></a>
+    <a href="${pageContext.request.contextPath}/dnm/sitemain.do"><button>采样点管理</button></a>
+    <a href="${pageContext.request.contextPath}/dnm/stamain.do"><button>危害信息检测分析</button></a>
 </div>
 <h6>周氏集团互联网有限子公司权限所有</h6>
 </body>

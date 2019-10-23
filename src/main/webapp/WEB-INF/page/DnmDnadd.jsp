@@ -14,7 +14,7 @@
 
 
         #box{
-            width:1200px;
+            width:1400px;
             margin:0 auto;
             font-size:14px;
 
@@ -55,7 +55,7 @@
         #main{
             border-radius: 15px;
             display:inline-block;
-            width:1000px;
+            width:1200px;
             height:600px;
             background-color: antiquewhite;
 
