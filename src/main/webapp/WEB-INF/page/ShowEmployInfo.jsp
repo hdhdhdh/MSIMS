@@ -23,7 +23,6 @@
     <a href="index.html">主页</a><br>
     <a href="alethistory.cgi">员工信息查询</a><br>
     <a href="changt.html">添加员工</a><br>
-    <a href="changh.html">修改员工信息</a><br>
 </div>
 
 <div class ="section">
@@ -32,16 +31,22 @@
         <input type="submit" value="查询" />
     </form>
     <div  style=" text-align: left">
-        员工工号:${em.employ_num}<br><br><br>
-        姓名:${em.employ_name}<br><br><br>
-        性别:${em.employ_sex}<br><br><br>
-        身份证:${em.employ_ID}<br><br><br>
-        出生日期:${em.employ_born}<br><br><br>
-        电话:${em.employ_tel}<br><br><br>
-        职务:${em.employ_duty}<br><br><br>
-        住址:${em.employ_address}<br><br><br>
-        入职日期:${em.employ_join}<br><br><br>
-        离职日期:${em.employ_exit}<br><br><br>
+
+
+        <form action="/updateemploy.do" method="post">
+            员工工号：<input type="text" value = "${em.employ_num}" disabled = "disabled"/><br><br><br>
+            <input type="hidden" value = "${em.employ_num}"  name="employ_num" /><br><br><br>
+            姓名:<input type="text"disabled = "disabled"   value = "${em.employ_name}"/><br><br><br>
+            性别:<input type="text"disabled = "disabled"  value = "${em.employ_sex}"/><br><br><br>
+            身份证:<input type="text"disabled = "disabled"  value = "${em.employ_ID}"/><br><br><br>
+            出生日期:<input type="date" disabled = "disabled" value = "${em.employ_born}" /><br><br><br>
+            入职日期:<input type="text"  disabled = "disabled" value = "${em.employ_join}"/><br><br><br>
+            电话:<input type="text" name="employ_tel" value = "${em.employ_tel}"/><br><br><br>
+            职务:<input type="text" name="employ_duty" value = "${em.employ_duty}"/><br><br><br>
+            住址:<input type="text" name="employ_address" value ="${em.employ_address}"/><br><br><br>
+            登录密码：<input type="text" name="employ_passw" /><br><br><br>
+            <input type="submit" value="提交修改" />
+        </form>
     </div>
 
 

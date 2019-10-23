@@ -25,7 +25,7 @@ public class SysmLawController {
     @Autowired
     private SysmLawService sysmLawService;
 
-    @RequestMapping("/main.do") //功能主界面
+  //  @RequestMapping("/main.do") //功能主界面
     public String sysm_main(){
 
         return "SysmMain";
@@ -96,7 +96,7 @@ public class SysmLawController {
 
     //上传文档
 
-    @PostMapping("/upload")
+   // @PostMapping("/upload")
     public String upload(@RequestParam("filebody") MultipartFile file) {
 
         try {
