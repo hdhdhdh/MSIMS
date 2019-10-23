@@ -67,6 +67,14 @@
         </dependency>
 
 
+        <!--访问微软文档API Byxx-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.6</version>
+        </dependency>
+
+
     </dependencies>
 
 

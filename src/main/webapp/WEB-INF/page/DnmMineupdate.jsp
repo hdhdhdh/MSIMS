@@ -14,7 +14,7 @@
 
 
         #box{
-            width:1200px;
+            width:1400px;
             margin:0 auto;
             font-size:14px;
 
@@ -55,7 +55,7 @@
         #main{
             border-radius: 15px;
             display:inline-block;
-            width:1000px;
+            width:1200px;
             height:600px;
             background-color: antiquewhite;
 
@@ -116,29 +116,29 @@
     <div id='nav'>
         <ul>
 
-            <li><a href="DnmMineadd.html">新增采样记录</a> </li>
-            <li><a href="DnmMinefind.html">查询采样记录</a> </li>
-            <li><a href="DnmMain.html">返回至主界面</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/tomineadd.do">新增采样记录</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/tominefind.do">查询采样记录</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/main.do">返回至主界面</a> </li>
         </ul>
     </div>
 
     <div id='main'>
         <h2>修改采样记录</h2>
 
-
-        <form method="post" action="">
-            <p>采样点ID:&nbsp;<input size="5px" TYPE="text" NAME="site_id" id="site_id" value="88"></p>
-            <p>实测风速:&nbsp;<input size="3px" TYPE="text" NAME="mine_speed" id="mine_speed" value="">
-                &nbsp;&nbsp;&nbsp;面积:&nbsp;<input size="3px" TYPE="text" NAME="mine_area" id="mine_area" value="">
-                &nbsp;&nbsp;&nbsp;风量:&nbsp;<input size="3px" TYPE="text" NAME="mine_amount" id="mine_amount" value="">
-                &nbsp;&nbsp;&nbsp;风向:&nbsp;<input size="3px" TYPE="text" NAME="mine_direct" id="mine_direct" placeholder="进/出" value="">
-            <p>粉尘:&nbsp;<input size="3px" TYPE="text" NAME="mine_dust" id="mine_dust" value="">
-                &nbsp;&nbsp;&nbsp;一氧化碳:&nbsp;<input size="3px" TYPE="text" NAME="mine_co" id="mine_co" value="">
-                &nbsp;&nbsp;&nbsp;温度:&nbsp;<input size="3px" TYPE="text" NAME="mine_temp" id="mine_temp" value="">
+        <form method="post" action="${pageContext.request.contextPath}/dnm/mineupdate.do">
+            <p>记录编号:&nbsp;<input size="5px" TYPE="text" NAME="mine_num" id="mine_num" value="${dum.mine_num}" readonly="true"></p>
+            <p>采样点ID:&nbsp;<input size="5px" TYPE="text" NAME="site_id" id="site_id" value="${dum.site_id}"></p>
+            <p>实测风速:&nbsp;<input size="3px" TYPE="text" NAME="mine_speed" id="mine_speed" value="${dum.mine_speed}">
+                &nbsp;&nbsp;&nbsp;面积:&nbsp;<input size="3px" TYPE="text" NAME="mine_area" id="mine_area" value="${dum.mine_area}">
+                &nbsp;&nbsp;&nbsp;风量:&nbsp;<input size="3px" TYPE="text" NAME="mine_amount" id="mine_amount" value="${dum.mine_amount}">
+                &nbsp;&nbsp;&nbsp;风向:&nbsp;<input size="3px" TYPE="text" NAME="mine_direct" id="mine_direct" placeholder="进/出" value="${dum.mine_direct}">
+            <p>粉尘:&nbsp;<input size="3px" TYPE="text" NAME="mine_dust" id="mine_dust" value="${dum.mine_dust}">
+                &nbsp;&nbsp;&nbsp;一氧化碳:&nbsp;<input size="3px" TYPE="text" NAME="mine_co" id="mine_co" value="${dum.mine_co}">
+                &nbsp;&nbsp;&nbsp;温度:&nbsp;<input size="3px" TYPE="text" NAME="mine_temp" id="mine_temp" value="${dum.mine_temp}">
             </p>
-            <p>检测人:&nbsp;<input size="8px" TYPE="text" NAME="mine_name" id="mine_name" value=""></p>
-            <p>检测日期:&nbsp;<input size="10px" TYPE="date" NAME="mine_date" id="mine_date" value=""></p>
-            <input type="submit" value="添&nbsp;&nbsp;加" name="mine_upate" id="mine_update"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="重&nbsp;&nbsp;置">
+            <p>检测人:&nbsp;<input size="8px" TYPE="text" NAME="mine_name" id="mine_name" value="${dum.mine_name}"></p>
+            <p>检测日期:&nbsp;<input size="10px" TYPE="date" NAME="mine_date" id="mine_date" value="${dum.mine_date}"></p>
+            <input type="submit" value="修&nbsp;&nbsp;改" name="mine_upate" id="mine_update"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="取&nbsp;&nbsp;消">
 
         </form>
 

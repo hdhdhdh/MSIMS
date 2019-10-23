@@ -14,7 +14,7 @@
 
 
         #box{
-            width:1200px;
+            width:1400px;
             margin:0 auto;
             font-size:14px;
 
@@ -55,7 +55,7 @@
         #main{
             border-radius: 15px;
             display:inline-block;
-            width:1000px;
+            width:1200px;
             height:600px;
             background-color: antiquewhite;
 
@@ -117,8 +117,8 @@
         <ul>
 
             <li><a href="">新增采样记录</a> </li>
-            <li><a href="DnmMinefind.html">查询采样记录</a> </li>
-            <li><a href="DnmMain.html">返回至主界面</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/tominefind.do">查询采样记录</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/main.do">返回至主界面</a> </li>
         </ul>
     </div>
 
@@ -126,7 +126,7 @@
         <h2>新增采样记录</h2>
 
 
-        <form method="post" action="">
+        <form method="post" action="${pageContext.request.contextPath}/dnm/mineadd.do">
             <p>采样点ID:&nbsp;<input size="5px" TYPE="text" NAME="site_id" id="site_id" ></p>
             <p>实测风速:&nbsp;<input size="3px" TYPE="text" NAME="mine_speed" id="mine_speed" >
                 &nbsp;&nbsp;&nbsp;面积:&nbsp;<input size="3px" TYPE="text" NAME="mine_area" id="mine_area" >

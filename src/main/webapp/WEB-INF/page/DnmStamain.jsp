@@ -1,15 +1,15 @@
 <%--
   Created by IntelliJ IDEA.
   User: SXX
-  Date: 2019/10/22
-  Time: 21:14
+  Date: 2019/10/23
+  Time: 21:07
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>粉尘、噪音浓度检测</title>
+    <title>危害信息检测分析</title>
     <style>
 
 
@@ -70,13 +70,14 @@
 <body>
 <div id='box'>
     <div id='logo'>
-        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;粉尘、噪音浓度检测</h1>
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;危害信息检测分析</h1>
     </div>
     <div id='nav'>
         <ul>
 
-            <li><a href="${pageContext.request.contextPath}/dnm/todnadd.do">新增采样记录</a> </li>
-            <li><a href="${pageContext.request.contextPath}/dnm/todnfind.do">查询采样记录</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/tostaDfind.do">双重条件搜索</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/tostaTfind.do">时间段搜索</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/tostaCfind.do">搜寻指定类别</a> </li>
             <li><a href="${pageContext.request.contextPath}/dnm/main.do">返回至主界面</a> </li>
         </ul>
     </div>
