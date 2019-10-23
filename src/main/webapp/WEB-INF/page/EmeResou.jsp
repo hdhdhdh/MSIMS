@@ -9,22 +9,21 @@
 <html>
 <head>
     <link rel = "stylesheet" type="text/css" href="../../css/Eme.css">
-    <title>应急救援信息管理</title>
+    <title>应急物资信息管理</title>
 </head>
 
 <body>
 
 <div class = "header">
-    <h1>应急救援信息管理</h1>
+    <h1>应急物资信息管理</h1>
 </div>
 
 <div class ="nav">
     <a href="index.html">主&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp页</a><br>
-    <a href="alethistory.cgi">应急机构</a><br>
-    <a href="changt.html">应急救援人员</a><br>
-    <a href="changh.html">应急预案</a><br>
-    <a href="changc.html">应急物资管理</a><br>
-    <a href="changc.html">应急演练管理</a><br>
+    <a href="alethistory.cgi">增加应急物资信息</a><br>
+    <a href="changt.html">删除应急物资信息</a><br>
+    <a href="changh.html">查找应急物资信息</a><br>
+    <a href="changc.html">修改应急物资信息</a><br>
 </div>
 
 <div class ="section">

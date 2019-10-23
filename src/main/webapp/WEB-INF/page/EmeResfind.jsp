@@ -1,12 +1,11 @@
 <%--
   Created by IntelliJ IDEA.
   User: 周涵
-  Date: 2019/10/22
-  Time: 21:30
+  Date: 2019/10/23
+  Time: 17:03
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <html>
 <head>
     <link rel = "stylesheet" type="text/css" href="../../css/Eme.css">
@@ -21,11 +20,10 @@
 
 <div class ="nav">
     <a href="index.html">主&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp页</a><br>
-    <a href="alethistory.cgi">应急机构信息管理</a><br>
-    <a href="changt.html">应急救援人员信息管理</a><br>
-    <a href="changh.html">应急预案信息管理</a><br>
-    <a href="changc.html">应急物资管理</a><br>
-    <a href="changc.html">应急演练管理</a><br>
+    <a href="alethistory.cgi">增加应急救援信息</a><br>
+    <a href="changt.html">删除应急救援人员信息</a><br>
+    <a href="changh.html">查找应急救援人员信息</a><br>
+    <a href="changc.html">修改应急救援人员信息</a><br>
 </div>
 
 <div class ="section">
