@@ -10,6 +10,6 @@ public interface ISysmLawService {
     public SysmLawInfo findLawById(String law_num);//通过发文字号查询安全生产法律法规
     public  boolean addLaw(SysmLawInfo sysmLawInfo);//增加安全生产法律法规
     public void delLaw(String law_num);//删除安全生产法律法规
-    public boolean updateLaw(SysmLawInfo sysmLawInfo);//更新安全生产法律法规
+    public boolean updateLaw(SysmLawInfo sysmLawInfo,String law_num);//更新安全生产法律法规
 
 }
