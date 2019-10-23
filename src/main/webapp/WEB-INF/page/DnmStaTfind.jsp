@@ -65,6 +65,19 @@
             font-size: 15px;
         }
 
+        h2{
+            font-size:25px;
+            font-family: 幼圆;
+            color: chartreuse;
+            text-align: center;
+
+        }
+        input[type="submit"]{
+            font-family:幼圆;
+            border-radius: 5px;
+
+        }
+
         table{
             margin: auto;
             width: 1150px;
@@ -93,16 +106,17 @@
         <ul>
 
             <li><a href="${pageContext.request.contextPath}/dnm/tostaDfind.do">双重条件搜索</a> </li>
-            <li><a href="">时间段搜索</a> </li>
+            <li><a href="">时间条件搜索</a> </li>
             <li><a href="${pageContext.request.contextPath}/dnm/tostaCfind.do">搜寻指定类别</a> </li>
             <li><a href="${pageContext.request.contextPath}/dnm/main.do">返回至主界面</a> </li>
         </ul>
     </div>
     <div id='main'>
+        <h2>时间条件搜索</h2>
 
         <form action="${pageContext.request.contextPath}/dnm/staTfind.do" method="post">
-            <p>请输入起始时间点&nbsp;<input size="7px" type="date" name="date1" id="date1"></p>
-            <p>请输入截止时间点&nbsp;<input size="7px" type="date" name="date2" id="date2"></p>
+            <p>请输入起始时间点:&nbsp;<input size="7px" type="date" name="date1" id="date1"></p>
+            <p>请输入截止时间点:&nbsp;<input size="7px" type="date" name="date2" id="date2"></p>
             <p><input type="submit" value="搜&nbsp;&nbsp;索"></p>
         </form>
 
@@ -116,21 +130,21 @@
             </tr>
             </thead>
             <tbody>
-            <c:forEach var="dn" items="${dndateid}">
+            <c:forEach var="dnt" items="${dndates}">
                 <tr>
-                    <td width="50px">${dn.duno_num}</td>
-                    <td width="80px">${dn.site_id}</td>
-                    <td width="60px">${dn.duno_dust1}</td>
-                    <td width="60px">${dn.duno_dust2}</td>
-                    <td width="60px">${dn.duno_dust3}</td>
-                    <td width="60px">${dn.duno_dusta}</td>
-                    <td width="60px">${dn.duno_noise1}</td>
-                    <td width="60px">${dn.duno_noise2}</td>
-                    <td width="60px">${dn.duno_noise3}</td>
-                    <td width="60px">${dn.duno_noisea}</td>
-                    <td width="60px">${dn.duno_room}</td>
-                    <td>${dn.duno_name}</td>
-                    <td>${dn.duno_date}</td>
+                    <td width="50px">${dnt.duno_num}</td>
+                    <td width="80px">${dnt.site_id}</td>
+                    <td width="60px">${dnt.duno_dust1}</td>
+                    <td width="60px">${dnt.duno_dust2}</td>
+                    <td width="60px">${dnt.duno_dust3}</td>
+                    <td width="60px">${dnt.duno_dusta}</td>
+                    <td width="60px">${dnt.duno_noise1}</td>
+                    <td width="60px">${dnt.duno_noise2}</td>
+                    <td width="60px">${dnt.duno_noise3}</td>
+                    <td width="60px">${dnt.duno_noisea}</td>
+                    <td width="60px">${dnt.duno_room}</td>
+                    <td>${dnt.duno_name}</td>
+                    <td>${dnt.duno_date}</td>
                 </tr>
 
             </c:forEach>
@@ -146,19 +160,19 @@
 
             </thead>
             <tbody>
-            <c:forEach var="dm" items="${dmdateid}">
+            <c:forEach var="dmt" items="${dmdates}">
                 <tr>
-                    <td>${dm.mine_num}</td>
-                    <td>${dm.site_id}</td>
-                    <td>${dm.mine_speed}</td>
-                    <td>${dm.mine_area}</td>
-                    <td>${dm.mine_amount}</td>
-                    <td>${dm.mine_direct}</td>
-                    <td>${dm.mine_dust}</td>
-                    <td>${dm.mine_co}</td>
-                    <td>${dm.mine_temp}</td>
-                    <td>${dm.mine_name}</td>
-                    <td>${dm.mine_date}</td>
+                    <td>${dmt.mine_num}</td>
+                    <td>${dmt.site_id}</td>
+                    <td>${dmt.mine_speed}</td>
+                    <td>${dmt.mine_area}</td>
+                    <td>${dmt.mine_amount}</td>
+                    <td>${dmt.mine_direct}</td>
+                    <td>${dmt.mine_dust}</td>
+                    <td>${dmt.mine_co}</td>
+                    <td>${dmt.mine_temp}</td>
+                    <td>${dmt.mine_name}</td>
+                    <td>${dmt.mine_date}</td>
                 </tr>
             </c:forEach>
 

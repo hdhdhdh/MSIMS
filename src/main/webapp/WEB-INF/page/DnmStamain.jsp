@@ -76,7 +76,7 @@
         <ul>
 
             <li><a href="${pageContext.request.contextPath}/dnm/tostaDfind.do">双重条件搜索</a> </li>
-            <li><a href="${pageContext.request.contextPath}/dnm/tostaTfind.do">时间段搜索</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/tostaTfind.do">时间条件搜索</a> </li>
             <li><a href="${pageContext.request.contextPath}/dnm/tostaCfind.do">搜寻指定类别</a> </li>
             <li><a href="${pageContext.request.contextPath}/dnm/main.do">返回至主界面</a> </li>
         </ul>

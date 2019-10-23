@@ -70,7 +70,7 @@ public class DnmStaController {
 
         List<DnmMineInfo> dmds=iDnmMineService.minefindbydates(date1,date2);
         mvd.addObject("dmdates",dmds);
-        mvd.setViewName("DnmStaDfind");
+        mvd.setViewName("DnmStaTfind");
         return mvd;
 
     }

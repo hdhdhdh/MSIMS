@@ -31,7 +31,7 @@ public interface DnmDnDao {
     @Select("select * from tb_duno where site_id = #{site_id} and duno_date = #{duno_date}")   //根据时间id查询
     public  List<DnmDnInfo> dnfindbydateid(String site_id,Date duno_date);
 
-    @Select("select * from tb_duno where duno_time Between 'date1' and 'date2'")   //根据时间段查询
+    @Select("select * from tb_duno where duno_date between #{date1} and #{date2} ")   //根据时间段查询
     public  List<DnmDnInfo> dnfindbydates(Date date1,Date date2);
 
 

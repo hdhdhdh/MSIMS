@@ -64,6 +64,33 @@
             align-items: center;
             font-size: 15px;
         }
+        h2{
+            font-size:25px;
+            font-family: 幼圆;
+            color: chartreuse;
+            text-align: center;
+
+        }
+        input[type="submit"]{
+            font-family:幼圆;
+            border-radius: 5px;
+
+        }
+        table{
+            margin: auto;
+            width: 1150px;
+            border: 2px solid #faa5ff;
+            border-spacing: 0;
+            text-align: center;
+            font-family: 宋体;
+            border-radius: 5px;
+        }
+        a{
+            color: #791388;
+            font-family: 幼圆;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
 
     </style>
@@ -77,12 +104,14 @@
         <ul>
 
             <li><a href="${pageContext.request.contextPath}/dnm/tostaDfind.do">双重条件搜索</a> </li>
-            <li><a href="${pageContext.request.contextPath}/dnm/tostaTfind.do">时间段搜索</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/tostaTfind.do">时间条件搜索</a> </li>
             <li><a href="">搜寻指定类别</a> </li>
             <li><a href="${pageContext.request.contextPath}/dnm/main.do">返回至主界面</a> </li>
         </ul>
     </div>
     <div id='main'>
+        <h2>搜寻指定类型</h2>
+
 
     </div>
 

@@ -105,7 +105,7 @@
         <ul>
 
             <li><a href="">双重条件搜索</a> </li>
-            <li><a href="${pageContext.request.contextPath}/dnm/tostaTfind.do">时间段搜索</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/tostaTfind.do">时间条件搜索</a> </li>
             <li><a href="${pageContext.request.contextPath}/dnm/tostaCfind.do">搜寻指定类别</a> </li>
             <li><a href="${pageContext.request.contextPath}/dnm/main.do">返回至主界面</a> </li>
         </ul>
@@ -114,7 +114,7 @@
         <h2>双重条件搜索</h2>
         <form action="${pageContext.request.contextPath}/dnm/staDfind.do" method="post">
             <p>输入需要查询采样点的名称:&nbsp;<input size="7px" type="text" name="site_place" id="site_place"></p>
-            <p>请输入需要查询的时间&nbsp;<input size="7px" type="date" name="date" id="date"></p>
+            <p>请输入需要查询的时间：&nbsp;&nbsp;<input size="7px" type="date" name="date" id="date"></p>
             <p><input type="submit" value="搜&nbsp;&nbsp;索"></p>
         </form>
 

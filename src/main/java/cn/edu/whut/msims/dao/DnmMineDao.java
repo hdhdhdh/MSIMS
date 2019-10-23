@@ -31,7 +31,7 @@ public interface DnmMineDao {
     @Select("select * from tb_mine where site_id = #{site_id} and mine_date = #{mine_date}")   //根据时间id查询
     public  List<DnmMineInfo> minefindbydateid(String site_id,Date mine_date);
 
-    @Select("select * from tb_mine where mine_time Between 'date1' and 'date2'")   //根据时间段查询
+    @Select("select * from tb_mine where mine_date between #{date1} and #{date2}")   //根据时间段查询
     public  List<DnmMineInfo> minefindbydates(Date date1, Date date2);
 
 
