@@ -1,5 +1,6 @@
 package cn.edu.whut.msims;
 
+import cn.edu.whut.msims.bean.EmployInfo;
 import cn.edu.whut.msims.dao.EmployDao;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,6 +23,8 @@ public class MsimsApplicationTests {
     @Test
     public void otherTest() throws Exception
     {
+        EmployInfo employInfo = new EmployInfo();
+
         System.out.println(employDao.getEmployByNum("00001"));
     }
 
