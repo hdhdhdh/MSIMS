@@ -7,15 +7,24 @@
     line-height:30px;
     background-color:#eeeeee;
     height: 100%;
-    width: 7%;
+    width: 160px;
     float:left;
     padding:5px;
     text-Align:center;
 }
 .section {
-    width:85%;
+    width:1000px;
     float:left;
     padding:10px;
     height: 100%;
     text-Align:center;
+}
+.table{
+    margin: auto;
+    width: 920px;
+    border: 2px solid #faa5ff;
+    border-spacing: 0;
+    text-align: center;
+    font-family: 宋体;
+    border-radius: 5px;
 }

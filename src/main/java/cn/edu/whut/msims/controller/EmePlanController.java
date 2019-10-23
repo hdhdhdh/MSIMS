@@ -5,32 +5,31 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/res")
-public class EmeResController {
+@RequestMapping("/plan")
+public class EmePlanController {
     @Autowired
-    @RequestMapping("/EmeRes.do")
+    @RequestMapping("/EmePlan.do")
     public String hello() {
-        return "EmeRes";
+        return "EmePlan";
     }
 
-    @RequestMapping("/EmeResadd.do")
+    @RequestMapping("/EmePlanadd.do")
     public String add() {
-        return "EmeResadd";
+        return "EmePlanadd";
     }
 
-    @RequestMapping("/EmeResdelete.do")
+    @RequestMapping("/EmePlandelete.do")
     public String delete() {
-        return "EmeResdelete";
+        return "EmePlandelete";
     }
 
-    @RequestMapping("/EmeResfind.do")
+    @RequestMapping("/EmePlanfind.do")
     public String select() {
-        return "EmeResfind";
+        return "EmePlanfind";
     }
 
-    @RequestMapping("/EmeResupdate.do")
+    @RequestMapping("/EmePlanupdate.do")
     public String update() {
-        return "EmeResupdat";
+        return "EmePlanupdat";
     }
-
 }
