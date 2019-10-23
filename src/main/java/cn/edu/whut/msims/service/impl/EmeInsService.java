@@ -3,10 +3,13 @@ package cn.edu.whut.msims.service.impl;
 import cn.edu.whut.msims.bean.EmeInsInfo;
 import cn.edu.whut.msims.dao.EmeInsDao;
 import cn.edu.whut.msims.service.IEmeInsService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class EmeInsService implements IEmeInsService {
+
     private EmeInsDao emeInsDao;
     @Override
     public List<EmeInsDao> findEmeInsByNum(String instit_num) {
@@ -26,4 +29,7 @@ public class EmeInsService implements IEmeInsService {
         emeInsDao.updateEmeIns(EmeInsInfo);
     }
 
+    public List<EmeInsInfo> findAllIns(){
+        return emeInsDao.findAllIns();
+    }
 }

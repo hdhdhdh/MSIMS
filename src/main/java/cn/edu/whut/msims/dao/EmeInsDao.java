@@ -9,6 +9,8 @@ import org.apache.ibatis.annotations.Update;
 import java.util.List;
 
 public interface EmeInsDao {
+    @Select("SELECT * FROM tb_instit")
+    public List<EmeInsInfo> findAllIns();
     @Select("SELECT * FROM tb_instit where rescue_num = #{num}")
     public List<EmeInsDao> findEmeInsByNum(String rescue_num);
     @Insert("insert into tb_instit(instit_num,instit_name,instit_func,instit_tel,admin_id,instit_date) values (#{instit_num},{instit_name},#{instit_func},#{instit_tel},#{admin_id},#{instit_date})")

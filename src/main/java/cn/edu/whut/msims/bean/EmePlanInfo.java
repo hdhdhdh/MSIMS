@@ -1,6 +1,7 @@
 package cn.edu.whut.msims.bean;
 
-import java.util.Date;
+import java.sql.Date;
+
 
 public class EmePlanInfo {
     private String plan_num;  //版本号

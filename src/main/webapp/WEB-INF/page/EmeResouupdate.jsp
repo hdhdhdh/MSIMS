@@ -19,13 +19,12 @@
 </div>
 
 <div class ="nav">
-    <a href="index.html">主&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp页</a><br>
-    <a href="alethistory.cgi">增加应急物资信息</a><br>
-    <a href="changt.html">删除应急物资信息</a><br>
-    <a href="changh.html">查找应急物资信息</a><br>
-    <a href="changc.html">修改应急物资信息</a><br>
+    <li><a href="${pageContext.request.contextPath}/main/EmeMain.do">主&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp页</a> </li>
+    <li><a href="${pageContext.request.contextPath}/resou/EmeResouadd.do">增加应急物资信息</a></li>
+    <li><a href="${pageContext.request.contextPath}/resou/EmeResoudelete.do">删除应急物资信息</a></li>
+    <li><a href="${pageContext.request.contextPath}/resou/EmeResoufind.do">查找应急物资信息</a></li>
+    <li><a href="${pageContext.request.contextPath}/resou/EmeResouupdate.do">修改应急物资信息</a></li>
 </div>
-
 <div class ="section">
     <h1>欢迎hhhhhhhhhhhhhhhhhhhhh</h1>
 </div>

@@ -10,4 +10,5 @@ public interface IEmeInsService {
     public void  addEmeIns(EmeInsInfo EmeInsInfo);
     public void  deleteEmeIns(EmeInsInfo EmeInsInfo);
     public void  updateEmeIns(EmeInsInfo EmeInsInfo);
+   // public List<EmeInsInfo> findAllIns();
 }
