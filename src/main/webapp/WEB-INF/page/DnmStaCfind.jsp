@@ -112,6 +112,31 @@
     <div id='main'>
         <h2>搜寻指定类型</h2>
 
+        <form action="${pageContext.request.contextPath}/dnm/staCfind.do" method="post">
+            输入需要查询的类别名称:<br>
+            &nbsp;<input size="7px" type="radio" name="site_kind" id="kind1" value="dust">粉尘<br>
+            &nbsp;<input size="7px" type="radio" name="site_kind" id="kind2" value="noise">噪声<br>
+            &nbsp;<input size="7px" type="radio" name="site_kind" id="kind3" value="cok">一氧化碳<br>
+            <p><input type="submit" value="搜&nbsp;&nbsp;索"></p>
+        </form>
+
+<%--        <table>--%>
+<%--            <thead>--%>
+<%--            <tr>--%>
+<%--                <td>采样点ID</td><td width="300px">采样内容</td>--%>
+<%--            </tr>--%>
+<%--            </thead>--%>
+
+<%--            <tbody>--%>
+<%--              <c:forEach var="s" items="${}">--%>
+<%--                  <tr>--%>
+<%--                      <td>${}</td><td>${}</td>--%>
+<%--                  </tr>--%>
+<%--              </c:forEach>--%>
+
+
+<%--            </tbody>--%>
+<%--        </table>--%>
 
     </div>
 
