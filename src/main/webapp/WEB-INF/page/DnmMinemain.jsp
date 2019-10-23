@@ -14,7 +14,7 @@
 
 
         #box{
-            width:1200px;
+            width:1400px;
             margin:0 auto;
 
         }
@@ -54,8 +54,8 @@
         #main{
             border-radius: 15px;
             display:inline-block;
-            width:1000px;
-            height:500px;
+            width:1200px;
+            height:600px;
             background-color: antiquewhite;
             text-align: center;
             align-items: center;
@@ -74,9 +74,9 @@
     <div id='nav'>
         <ul>
 
-            <li><a href="DnmMineadd.html">新增采样记录</a> </li>
-            <li><a href="DnmMinefind.html">查询采样记录</a> </li>
-            <li><a href="DnmMain.html">返回至主界面</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/tomineadd.do">新增采样记录</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/tominefind.do">查询采样记录</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/main.do">返回至主界面</a> </li>
         </ul>
     </div>
     <div id='main'>
