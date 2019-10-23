@@ -21,7 +21,7 @@ public class LxmQualController {
     public String qual_main(){
         return "LxmQual";
     }
-    @RequestMapping("/expirequal.do")
+    @RequestMapping("/expirequal.do")//跳转到过期页面
     public String findExpiredQual(){
         return "LxmExpireQual";
     }
@@ -63,5 +63,12 @@ public class LxmQualController {
         return "redirect:/Lxm/findAll.do";
     }
     @RequestMapping("/findnum.do")//跳转到查询的证书页面
-    public String qual_findnum(){return "LxmQual-finded";}
+    public ModelAndView qual_findnum(String qual_num){
+        ModelAndView mv=new ModelAndView();
+        System.out.println(qual_num);
+        LxmQualInfo select= iLxmQualService.QueryByNum(qual_num);
+        mv.addObject("qualfind",select);
+        mv.setViewName("LxmQual-finded");
+        return mv;
+    }
 }

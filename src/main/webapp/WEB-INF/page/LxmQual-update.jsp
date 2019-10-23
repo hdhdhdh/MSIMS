@@ -49,7 +49,7 @@
             </div>
             <div>
                 <label for="qual_class" class="text-label1">证书类型</label>
-                <select size="1" name="qual_class" id="qual_class" class="text-label2" value="${qualup.qual_class}>
+                <select size="1" name="qual_class" id="qual_class" class="text-label2">
                     <option value="special" selected="selected">总承包特级</option>
                     <option value="总承包一级">总承包一级</option>
                     <option value="总承包二级">总承包二级</option>
@@ -58,15 +58,15 @@
             </div>
             <div>
                 <label for="qual_sdate" class="text-label1">有效期（起）</label>
-                <input class="text-label2" type="date" name="qual_sdate" id="qual_sdate" value="${qualup.qual_sdate} required="required" placeholder="年/月/日">
+                <input class="text-label2" type="date" name="qual_sdate" id="qual_sdate" required="required" placeholder="年/月/日">
             </div>
             <div>
                 <label for="qual_edate" class="text-label1">有效期（止）</label>
-                <input class="text-label2" type="date" name="qual_edate" id="qual_edate" value="${qualup.qual_edate} required="required" placeholder="年/月/日">
+                <input class="text-label2" type="date" name="qual_edate" id="qual_edate" required="required" placeholder="年/月/日">
             </div>
             <div>
                 <label for="qual_office" class="text-label1">发证机关</label>
-                <select size="1" name="qual_office" id="qual_office" class="text-label2" value="${qualup.qual_office}>
+                <select size="1" name="qual_office" id="qual_office" class="text-label2">
                     <option value="县国土资源主管部门" selected="selected">县国土资源主管部门</option>
                     <option value="市国土资源主管部门">市国土资源主管部门</option>
                     <option value="省国土资源主管部门">省国土资源主管部门</option>
@@ -74,15 +74,15 @@
             </div>
             <div>
                 <label for="qual_time" class="text-label1">发证时间</label>
-                <input class="text-label2" type="date" name="qual_time" id="qual_time" value="${qualup.qual_time} required="required" placeholder="年/月/日">
+                <input class="text-label2" type="date" name="qual_time" id="qual_time" required="required" placeholder="年/月/日">
             </div>
             <div>
                 <label for="admin_id" class="text-label1">上传人</label>
-                <input class="text-label2" type="text" name="admin_id" id="admin_id" value="${qualup.admin_id} required="required" placeholder="上传人长度5位">
+                <input class="text-label2" type="text" name="admin_id" id="admin_id" required="required" placeholder="上传人长度5位">
             </div>
             <div>
                 <label for="qual_date" class="text-label1">上传时间</label>
-                <input class="text-label2" type="date" name="qual_date" id="qual_date" value="${qualup.qual_date} required="required" placeholder="年/月/日">
+                <input class="text-label2" type="date" name="qual_date" id="qual_date" required="required" placeholder="年/月/日">
             </div>
             <div>
                 <input class="text-btn1" type="submit" name="update_qual" value="更改">
