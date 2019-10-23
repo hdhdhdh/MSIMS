@@ -1,6 +1,7 @@
 package cn.edu.whut.msims.controller;
 
 import cn.edu.whut.msims.bean.LxmQualInfo;
+import cn.edu.whut.msims.bean.SpecialInfo;
 import cn.edu.whut.msims.service.IDnmDnService;
 import cn.edu.whut.msims.service.ILxmQualService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.xml.ws.RequestWrapper;
+import java.sql.Date;
 import java.util.List;
 
 @Controller
@@ -22,7 +24,11 @@ public class LxmQualController {
         return "LxmQual";
     }
     @RequestMapping("/expirequal.do")//跳转到过期页面
-    public String findExpiredQual(){
+    public String findExpiredQual(Model m){
+
+        List<LxmQualInfo> specialInfoList = iLxmQualService.findExpiredQual(new Date(new java.util.Date().getTime()));
+        System.out.println(specialInfoList.toString());
+        m.addAttribute("all",specialInfoList);
         return "LxmExpireQual";
     }
     @RequestMapping("/findAll.do")//跳转到显示所有证书页面

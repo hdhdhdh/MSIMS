@@ -6,6 +6,7 @@ import cn.edu.whut.msims.service.ILxmQualService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Date;
 import java.util.List;
 @Service
 public class LxmQualService implements ILxmQualService
@@ -14,8 +15,8 @@ public class LxmQualService implements ILxmQualService
     ILxmQualDao lxmQualDao;
 
     @Override
-    public List<LxmQualInfo> findExpiredQual() {
-        return lxmQualDao.findExpiredQual();
+    public List<LxmQualInfo> findExpiredQual(Date date) {
+        return lxmQualDao.findExpiredQual(date);
     }
 
     @Override
