@@ -14,10 +14,17 @@ public class EmployController
 {
     @Autowired
     EmployService employService;
-    @RequestMapping("addemploy")
-    public String addEmploy ()
+    @RequestMapping("toaddemploy.do")
+    public String toAddEmploy ()
     {
-        return null;
+        return "AddEmploy";
+    }
+    @RequestMapping("addemploy.do")
+    public String addEmploy (EmployInfo employInfo)
+    {
+        System.out.println(employInfo.toString());
+        employService.addEmploy(employInfo);
+        return "AddEmploy";
     }
     @RequestMapping("/getemploy.do")
     public String toShowEmployInfo (Model m,String employ_num)
@@ -27,13 +34,16 @@ public class EmployController
             m.addAttribute("em",employService.getEmploy(employ_num));
         }
         return "ShowEmployInfo";
-
     }
 
-    @RequestMapping("updateemploy")
-    public String updateEmploy ()
+    @RequestMapping("/updateemploy.do")
+    public String updateEmploy (EmployInfo employInfo)
     {
-        return null;
-
+        System.out.println(employInfo.toString());
+        employInfo.setEmploy_exit(null);
+        if(employInfo.getEmploy_passw().equals("") == true)
+            employInfo.setEmploy_passw(null);
+        employService.updateEmploy(employInfo);
+        return "ShowEmployInfo";
     }
 }

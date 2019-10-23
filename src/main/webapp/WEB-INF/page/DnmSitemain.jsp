@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -14,7 +15,7 @@
 
 
         #box{
-            width:1200px;
+            width:1400px;
             margin:0 auto;
 
         }
@@ -54,8 +55,8 @@
         #main{
             border-radius: 15px;
             display:inline-block;
-            width:1000px;
-            height:500px;
+            width:1200px;
+            height:600px;
             background-color: antiquewhite;
             text-align: center;
             align-items: center;
@@ -65,7 +66,7 @@
 
         table{
             margin: auto;
-            width: 550px;
+            width: 600px;
             border: 2px solid #faa5ff;
             border-spacing: 0;
             text-align: center;
@@ -91,8 +92,9 @@
     <div id='nav'>
         <ul>
 
-            <li><a href="DnmSiteadd.html">新增样点信息</a> </li>
-            <li><a href="DnmMain.html">返回至主界面</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/sitemain.do">采样点主界面</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/tositeadd.do">新增样点信息</a> </li>
+            <li><a href="${pageContext.request.contextPath}/dnm/main.do">返回至主界面</a> </li>
         </ul>
     </div>
     <div id='main'>
@@ -104,14 +106,18 @@
 
             </thead>
             <tbody>
-            <c:forEach var="s" items="${}">
-                <td>${}</td>
-                <td>${}</td>
+            <c:forEach var="s" items="${dns}">
+
+                <tr>
+                <td>${s.site_id}</td>
+                <td>${s.site_place}</td>
 
 
-                <td class="text-center">
-                    <a href="" >更新</a>
+                <td >
+                    <a href="${pageContext.request.contextPath}/dnm/tositeupdate.do?site_id=${s.site_id}" >更改</a>&nbsp;
+                    <a href="${pageContext.request.contextPath}/dnm/sitedelete.do?site_id=${s.site_id}" >删除</a>
                 </td>
+                </tr>
 
             </c:forEach>
 

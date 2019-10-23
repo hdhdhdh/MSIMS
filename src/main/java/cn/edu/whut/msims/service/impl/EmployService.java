@@ -24,6 +24,7 @@ public class EmployService implements IEmployService {
             return true;
         }catch (Exception e)
         {
+            e.printStackTrace();
             return false;
         }
 
@@ -34,8 +35,10 @@ public class EmployService implements IEmployService {
         try {
             employDao.updateEmploy(employInfo);
             return true;
+
         }catch (Exception e)
         {
+            e.printStackTrace();
             return false;
         }
     }
