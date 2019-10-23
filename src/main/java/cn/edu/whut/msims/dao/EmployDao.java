@@ -11,6 +11,6 @@ import org.springframework.stereotype.Component;
 public interface EmployDao
 {
     @Select("SELECT * FROM tb_employ where employ_num = #{num}")
-    public EmployInfo getEmployByNum(@Param("num") String num);
+    public  EmployInfo getEmployByNum(@Param("num") String num);
 
 }

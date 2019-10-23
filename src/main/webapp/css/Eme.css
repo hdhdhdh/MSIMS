@@ -7,13 +7,13 @@
     line-height:30px;
     background-color:#eeeeee;
     height: 100%;
-    width: 7%;
+    width: 100px;
     float:left;
     padding:5px;
     text-Align:center;
 }
 .section {
-    width:85%;
+    width:1000px;
     float:left;
     padding:10px;
     height: 100%;
