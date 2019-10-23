@@ -21,8 +21,8 @@
 
 <div class ="nav">
     <a href="index.html">主页</a><br>
-    <a href="alethistory.cgi">员工信息查询</a><br>
-    <a href="changt.html">添加员工</a><br>
+    <a href="getemploy.do">员工信息查询</a><br>
+    <a href="toaddemploy.do">添加员工</a><br>
 </div>
 
 <div class ="section">
@@ -31,7 +31,6 @@
         <input type="submit" value="查询" />
     </form>
     <div  style=" text-align: left">
-
 
         <form action="/updateemploy.do" method="post">
             员工工号：<input type="text" value = "${em.employ_num}" disabled = "disabled"/><br><br><br>

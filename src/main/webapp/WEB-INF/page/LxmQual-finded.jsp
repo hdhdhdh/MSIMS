@@ -11,7 +11,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../images/quelcss.css">
+    <link rel="stylesheet" type="text/css" href="../css/quelcss.css">
     <title>主界面</title>
 </head>
 <body>
@@ -57,23 +57,23 @@
         </tr>
         </thead>
         <tbody>
-        <c:forEach var="#" items="${ps.list}">
+
             <tr>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
+                <td>${qualfind.qual_num}</td>
+                <td>${qualfind.qual_class}</td>
+                <td>${qualfind.qual_sdate}</td>
+                <td>${qualfind.qual_edate}</td>
+                <td>${qualfind.qual_office}</td>
+                <td>${qualfind.qual_time}</td>
+                <td>${qualfind.admin_id}</td>
+                <td>${qualfind.qual_date}</td>
                 <td >
-                    <a href="../images/quel-update.html" class="quelbtn">更改</a>
-                    <a href="../images/quel-list.html" class="quelbtn">删除</a>
-                    <a href="../images/quel-add.html" class="quelbtn">添加证书</a>
+                    <a href="${pageContext.request.contextPath}/Lxm/toupdatequal.do?qual_num=${qualfind.qual_num}" class="quelbtn">更改</a>
+                    <a href="${pageContext.request.contextPath}/Lxm/deletequal.do?qual_num=${qualfind.qual_num}" class="quelbtn">删除</a>
+                    <a href="${pageContext.request.contextPath}/Lxm/toaddqual.do" class="quelbtn">添加证书</a>
                 </td>
             </tr>
-        </c:forEach>
+
         </tbody>
     </table>
 </div>

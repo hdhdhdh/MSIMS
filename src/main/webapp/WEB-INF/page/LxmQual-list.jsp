@@ -40,10 +40,10 @@
     </div>
 </div>
 <div class="section">
-    <form method="post" action="${pageContext.request.contextPath}/Lxm/addqual.do" name="findquel" class="text-form">
+    <form method="post" action="${pageContext.request.contextPath}/Lxm/findnum.do" name="findquel" class="text-form">
         <div>
             <label for="findquelnum" class="text-label3">请输入证书编号</label>
-            <input class="text-label2" type="text" name="findquelnum" id="findquelnum" required="required" placeholder="证书编号长度5位" size="30">
+            <input class="text-label2" type="text" name="qual_num" id="findquelnum" required="required" placeholder="证书编号长度5位" size="30">
             <input class="text-btn3" type="submit" name="addquel" value="查找">
         </div>
     </form>
@@ -63,7 +63,7 @@
         </tr>
         </thead>
         <tbody>
-        <c:forEach var="user" items="${lxmQualInfos}">
+            <c:forEach var="user" items="${lxmQualInfos}">
             <tr>
                 <td>${user.qual_num}</td>
                 <td>${user.qual_class}</td>
@@ -79,7 +79,7 @@
                     <a href="${pageContext.request.contextPath}/Lxm/toaddqual.do" class="quelbtn">添加证书</a>
                 </td>
             </tr>
-        </c:forEach>
+            </c:forEach>
         </tbody>
     </table>
 </div>
