@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
 <head>
     <meta charset="UTF-8">
     <title>安全生产法律法规</title>
@@ -110,7 +110,7 @@
         <ul>
 
             <li><a href="#">新增安全生产法律法规</a> </li>
-            <li><a href="${pageContext.request.contextPath}/sysm/tolawfind.do">查询安全生产法律法规</a> </li>
+            <li><a href="${pageContext.request.contextPath}/sysm/lawfindall.do">查询安全生产法律法规</a> </li>
             <li><a href="${pageContext.request.contextPath}/sysm/main.do">返回至主界面</a> </li>
         </ul>
     </div>

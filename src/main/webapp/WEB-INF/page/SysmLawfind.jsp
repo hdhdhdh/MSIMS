@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<html>
 <head>
     <meta charset="utf-8" />
     <title>查询安全生产法律法规</title>
@@ -86,26 +87,26 @@
         }
 
 
-        ul{
-            margin-bottom: 0;
-            margin-top:auto;
-            margin-left: auto;
-            margin-right: auto;
-            width: 300px;
-            height: 100px;
-            list-style: none;
-            align-items: center;
-            text-align: center;
-        }
+        /*ul{*/
+        /*    margin-bottom: 0;*/
+        /*    margin-top:auto;*/
+        /*    margin-left: auto;*/
+        /*    margin-right: auto;*/
+        /*    width: 300px;*/
+        /*    height: 100px;*/
+        /*    list-style: none;*/
+        /*    align-items: center;*/
+        /*    text-align: center;*/
+        /*}*/
 
-        li{
-            list-style: none;
-            width: 20px;
-            height: 20px;
-            font-size: 16px;
-            float: left;
-            margin: 10px;
-        }
+        /*li{*/
+        /*    list-style: none;*/
+        /*    width: 20px;*/
+        /*    height: 20px;*/
+        /*    font-size: 16px;*/
+        /*    float: left;*/
+        /*    margin: 10px;*/
+        /*}*/
 
     </style>
 </head>
@@ -117,7 +118,7 @@
     <div id='nav'>
         <ul>
 
-            <li><a href="${pageContext.request.contextPath}/sysm/lawadd.do">新增安全生产法律法规</a> </li>
+            <li><a href="${pageContext.request.contextPath}/sysm/tolawadd.do">新增安全生产法律法规</a> </li>
             <li><a href="">查询安全生产法律法规</a> </li>
             <li><a href="${pageContext.request.contextPath}/sysm/main.do">返回至主界面</a> </li>
         </ul>
@@ -135,39 +136,40 @@
 
             </thead>
             <tbody>
-            <c:forEach var="d" items="${}">
-                <td>${}</td>
-                <td>${}</td>
-                <td>${}</td>
-                <td>${}</td>
-                <td>${}</td>
-                <td>${}</td>
-                <td>${}</td>
-                <td>${}</td>
-                <td>${}</td>
-                <td>${}</td>
-                <td>${}</td>
+            <c:forEach var="d" items="${sysmLawInfos}">
+               <tr>
+                <td>${d.law_num}</td>
+                <td>${d.law_class}</td>
+                <td>${d.law_name}</td>
+                <td>${d.law_dep}</td>
+                <td>${d.law_sdate}</td>
+                <td>${d.law_edate}</td>
+                <td>${d.law_checker}</td>
+                <td>${d.law_checktime}</td>
+                <td>${d.admin_id}</td>
+                <td>${d.law_date}</td>
+                <td>${d.law_note}</td>
 
                 <td class="text-center">
-                    <a href="SysmLawUpdate.html" >更新</a>
-                    <a href="" >删除</a>
+                    <a href="${pageContext.request.contextPath}/sysm/tolawupdate.do">更新</a>
+                    <a href="${pageContext.request.contextPath}/sysm/lawdelete.do?law_num=${d.law_num}" >删除</a>
                 </td>
-
+               </tr>
             </c:forEach>
 
 
             </tbody>
         </table>
 
-        <ul >
-            <li><a href="">首页</a></li>
-            <li><a href="">上一页</a></li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">下一页</a></li>
-            <li><a href="">尾页</a></li>
-        </ul>
+<%--        <ul >--%>
+<%--            <li><a href="">首页</a></li>--%>
+<%--            <li><a href="">上一页</a></li>--%>
+<%--            <li><a href="">1</a></li>--%>
+<%--            <li><a href="">2</a></li>--%>
+<%--            <li><a href="">3</a></li>--%>
+<%--            <li><a href="">下一页</a></li>--%>
+<%--            <li><a href="">尾页</a></li>--%>
+<%--        </ul>--%>
 
 
     </div>
