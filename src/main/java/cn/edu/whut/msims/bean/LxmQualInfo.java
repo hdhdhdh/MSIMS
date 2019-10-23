@@ -2,9 +2,9 @@ package cn.edu.whut.msims.bean;
 
 import com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer;
 
-import java.util.Date;
+import java.sql.Date;
 
-public class LxmQuelInfo {
+public class LxmQualInfo {
     private String qual_num;//证书编号
     private String qual_class;//证书类型
     private Date qual_sdate;//有效期（起）

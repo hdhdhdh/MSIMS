@@ -8,7 +8,7 @@ import java.text.DateFormat;
 import java.util.Date;
 
 @Controller
-public class helloController
+public class  helloController
 {
     @RequestMapping("/hello.do")
     public String hello (Model m)
