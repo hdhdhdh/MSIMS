@@ -27,12 +27,12 @@
         <ul id="nav" class="nav clearfix">
             <li class="nLi on" style="border-left: 0;">
                 <h1>
-                    <a href="LxmExpireQuel.jsp" target="_blank">公司资质证书预警</a>
+                    <a href="LxmExpireQual.jsp" target="_blank">公司资质证书预警</a>
                 </h1>
             </li>
             <li class="nLi">
                 <h1>
-                    <a href="LxmQuel-list.jsp" target="_blank">公司资质证书管理</a>
+                    <a href="LxmQual-list.jsp" target="_blank">公司资质证书管理</a>
                 </h1>
             </li>
         </ul>

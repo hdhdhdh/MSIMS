@@ -27,7 +27,7 @@
         <ul id="nav" class="nav clearfix">
             <li class="nLi on" style="border-left: 0;">
                 <h1>
-                    <a href="LxmQuel.jsp" target="_blank">企业资质证书管理</a>
+                    <a href="LxmQual.jsp" target="_blank">企业资质证书管理</a>
                 </h1>
             </li>
             <li class="nLi">

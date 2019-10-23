@@ -27,18 +27,25 @@
         <ul id="nav" class="nav clearfix">
             <li class="nLi on" style="border-left: 0;">
                 <h1>
-                    <a href="LxmExpireQuel.jsp" target="_blank">公司资质证书预警</a>
+                    <a href="LxmExpireQual.jsp" target="_blank">公司资质证书预警</a>
                 </h1>
             </li>
             <li class="nLi">
                 <h1>
-                    <a href="LxmQuel-list.jsp" target="_blank">公司资质证书管理</a>
+                    <a href="LxmQual-list.jsp" target="_blank">公司资质证书管理</a>
                 </h1>
             </li>
         </ul>
     </div>
 </div>
 <div class="section">
+    <form method="post" action="#" name="findquel" class="text-form">
+        <div>
+            <label for="findquelnum" class="text-label3">请输入证书编号</label>
+            <input class="text-label2" type="text" name="findquelnum" id="findquelnum" required="required" placeholder="证书编号长度5位" size="30">
+            <input class="text-btn3" type="submit" name="addquel" value="查找">
+        </div>
+    </form>
     <table id="dataList">
         <caption>公司资质证书信息</caption>
         <thead>
@@ -66,9 +73,9 @@
                 <td>${user.id}</td>
                 <td>${user.id}</td>
                 <td >
-                    <a href="LxmQuel-update.jsp" class="quelbtn">更改</a>
-                    <a href="LxmQuel-list.jsp" class="quelbtn">删除</a>
-                    <a href="LxmQuel-add.jsp" class="quelbtn">添加证书</a>
+                    <a href="LxmQual-update.jsp" class="quelbtn">更改</a>
+                    <a href="LxmQual-list.jsp" class="quelbtn">删除</a>
+                    <a href="LxmQual-add.jsp" class="quelbtn">添加证书</a>
                 </td>
             </tr>
         </c:forEach>

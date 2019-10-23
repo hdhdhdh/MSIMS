@@ -27,12 +27,12 @@
         <ul id="nav" class="nav clearfix">
             <li class="nLi on" style="border-left: 0;">
                 <h1>
-                    <a href="LxmExpireQuel.jsp" target="_blank">公司资质证书预警</a>
+                    <a href="LxmExpireQual.jsp" target="_blank">公司资质证书预警</a>
                 </h1>
             </li>
             <li class="nLi">
                 <h1>
-                    <a href="LxmQuel-list.jsp" target="_blank">公司资质证书管理</a>
+                    <a href="LxmQual-list.jsp" target="_blank">公司资质证书管理</a>
                 </h1>
             </li>
         </ul>
@@ -40,16 +40,16 @@
 </div>
 <div class="section">
     <div class="text-title"><b>更改证书信息</b></div>
-    <form method="post" action="#" name="addquel" class="text-form">
+    <form method="post" action="#" name="updatequal" class="text-form">
         <div>
             <div>
-                <label for="quelnum" class="text-label1">证书编号</label>
-                <input class="text-label2" type="text" name="quelnum" id="quelnum" required="required"
+                <label for="qualnum" class="text-label1">证书编号</label>
+                <input class="text-label2" type="text" name="qualnum" id="qualnum" required="required"
                        value="${user.id}" size="30" readonly="readonly">
             </div>
             <div>
-                <label for="quelclass" class="text-label1">证书类型</label>
-                <select size="1" name="quelclass" id="quelclass" class="text-label2">
+                <label for="qualclass" class="text-label1">证书类型</label>
+                <select size="1" name="qualclass" id="qualclass" class="text-label2">
                     <option value="special" selected="selected">总承包特级</option>
                     <option value="first">总承包一级</option>
                     <option value="second">总承包二级</option>
@@ -57,16 +57,16 @@
                 </select>
             </div>
             <div>
-                <label for="quelsdate" class="text-label1">有效期（起）</label>
-                <input class="text-label2" type="date" name="quelsdate" id="quelsdate" required="required" placeholder="年/月/日">
+                <label for="qualsdate" class="text-label1">有效期（起）</label>
+                <input class="text-label2" type="date" name="qualsdate" id="qualsdate" required="required" placeholder="年/月/日">
             </div>
             <div>
-                <label for="queledate" class="text-label1">有效期（止）</label>
-                <input class="text-label2" type="date" name="queledate" id="queledate" required="required" placeholder="年/月/日">
+                <label for="qualedate" class="text-label1">有效期（止）</label>
+                <input class="text-label2" type="date" name="qualedate" id="qualedate" required="required" placeholder="年/月/日">
             </div>
             <div>
-                <label for="queloffice" class="text-label1">发证机关</label>
-                <select size="1" name="queloffice" id="queloffice" class="text-label2">
+                <label for="qualoffice" class="text-label1">发证机关</label>
+                <select size="1" name="qualoffice" id="qualoffice" class="text-label2">
                     <option value="county" selected="selected">县国土资源主管部门</option>
                     <option value="Municipal">市国土资源主管部门</option>
                     <option value="Provincial">省国土资源主管部门</option>
@@ -85,7 +85,7 @@
                 <input class="text-label2" type="date" name="qualdate" id="qualdate" required="required" placeholder="年/月/日">
             </div>
             <div>
-                <input class="text-btn1" type="submit" name="addquel" value="更改">
+                <input class="text-btn1" type="submit" name="update_qual" value="更改">
                 <input class="text-btn2" type="button" name="return" value="返回" onclick="history.back(-1);">
             </div>
         </div>

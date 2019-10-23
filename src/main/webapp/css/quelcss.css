@@ -214,6 +214,17 @@ input{
     padding: 8px;
     font-family: Verdana,sans-serif;
 }
+.text-label3{
+    clear: left;
+    display: block;
+    float: left;
+    font-family: Verdana,sans-serif;
+    margin-left: 25%;
+    margin-top: auto;
+    margin-bottom: 8px;
+    padding: 5px;
+    font-size: 15px;
+}
 .text-btn1{
     clear: left;
     display: block;
@@ -235,6 +246,17 @@ input{
     margin-left: 45%;
     margin-top: auto;
     padding: 5px;
+    font-size: 15px;
+    color: black;
+    width: 100px;
+    height: 40px;
+    background-color: chocolate;
+}
+.text-btn3{
+    margin-left: 35%;
+    display: block;
+    font-family: Verdana,sans-serif;
+    padding: 8px;
     font-size: 15px;
     color: black;
     width: 100px;
