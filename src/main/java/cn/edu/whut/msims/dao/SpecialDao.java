@@ -17,7 +17,7 @@ public interface SpecialDao
 {
     @Select("SELECT * FROM tb_special where employ_num = #{num}")
     public List<SpecialInfo> getSpeciaByEmp(String num);
-    @Select("SELECT * FROM tb_special where #{date,jdbcType=DATE} >= expiry_date ")
+    @Select("SELECT * FROM tb_special where #{date,jdbcType=DATE} >= special_expiry_date")
     public List<SpecialInfo> getExpirySpecial(Date date);
     @Insert("INSERT INTO tb_special (special_id,admin_id,special_expiry_date,special_first_date,special_class,employ_num) VALUES ('${special_id}','${admin_id}','${special_expiry_date}','${special_first_date}','${special_class}',${employ_num})")
     public void addSpecial(SpecialInfo sp);
