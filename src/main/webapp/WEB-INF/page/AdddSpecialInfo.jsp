@@ -19,7 +19,9 @@
 </div>
 
 <div class ="nav">
-    <a href="index.html">主页</a><br>
+    <a href="/tomain.do">主页</a><br>
+    <a href="/getemploy.do">员工信息查询</a><br>
+    <a href="/toaddemploy.do">添加员工</a><br>
     <a href="/getspecial.do">特种作业证书查询</a><br>
     <a href="/getexpiryspecial.do">特种作业证书预警</a><br>
     <a href="/toaddspecial.do">添加特种作业证书</a><br>

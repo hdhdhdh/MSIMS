@@ -37,7 +37,7 @@
             </li>
             <li class="nLi">
                 <h1>
-                    <a href="#" target="_blank">员工安全信息管理</a>
+                    <a href="/getemploy.do" target="_blank">员工安全信息管理</a>
                 </h1>
             </li>
             <li class="nLi">

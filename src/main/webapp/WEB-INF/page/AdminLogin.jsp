@@ -91,12 +91,12 @@
 
     <div id="login_frame">
         <h2>矿山安全信息管理平台</h2>
-        <form method="post" action="">
-            <p><input type="text" id="username" placeholder="员工编号"  class="text_field"/> </p>
-            <p><input type="password" id="password" placeholder="员工初始密码统一为编号" class="text_field"/> </p>
+        <form method="post" action="/adminlogin.do">
+            <p><input type="text" id="username" name = "admin_id"placeholder="员工编号"  class="text_field"/> </p>
+            <p><input type="password" id="password" name = "admin_password"placeholder="员工初始密码统一为编号" class="text_field"/> </p>
 
             <p><button  type="submit" value="登录" onclick="login();">登&nbsp;&nbsp;录</button></p>
-
+            ${err}
         </form>
     </div>
 </div>
