@@ -4,11 +4,13 @@ import cn.edu.whut.msims.bean.LxmQualInfo;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Component;
 
+import java.sql.Date;
 import java.util.List;
 @Component
 @Mapper
 public interface ILxmQualDao {
-    public List<LxmQualInfo> findExpiredQual();//查找已经过期的证书
+    @Select("SELECT * FROM tb_qual where #{date,jdbcType=DATE} >= qual_edate ")
+    public List<LxmQualInfo> findExpiredQual(Date date);//查找已经过期的证书
 
     public List<LxmQualInfo> findExpiringQual();//查找即将过期的证书
 

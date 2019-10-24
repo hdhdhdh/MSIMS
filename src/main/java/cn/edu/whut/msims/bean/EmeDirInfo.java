@@ -1,6 +1,6 @@
 package cn.edu.whut.msims.bean;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class EmeDirInfo {
     private String dirll_num; //演练编号

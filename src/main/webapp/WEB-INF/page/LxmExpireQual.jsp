@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -52,18 +53,26 @@
                 <th>发证时间</th>
                 <th>上传人</th>
                 <th>上传时间</th>
+                <th>操作</th>
             </tr>
             </thead>
             <tbody>
-            <c:forEach var="#" items="${ps.list}">
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
-                <td>${user.id}</td>
+            <c:forEach var="user" items="${all}">
+                <tr>
+                <td>${user.qual_num}</td>
+                <td>${user.qual_class}</td>
+                <td>${user.qual_sdate}</td>
+                <td>${user.qual_edate}</td>
+                <td>${user.qual_office}</td>
+                <td>${user.qual_time}</td>
+                <td>${user.admin_id}</td>
+                <td>${user.qual_date}</td>
+                <td>
+                    <a href="${pageContext.request.contextPath}/Lxm/toupdatequal.do?qual_num=${user.qual_num}" class="quelbtn">更改</a>
+                    <a href="${pageContext.request.contextPath}/Lxm/deletequal.do?qual_num=${user.qual_num}" class="quelbtn">删除</a>
+                    <a href="${pageContext.request.contextPath}/Lxm/toaddqual.do" class="quelbtn">添加证书</a>
+                </td>
+                </tr>
             </c:forEach>
             </tbody>
         </table>

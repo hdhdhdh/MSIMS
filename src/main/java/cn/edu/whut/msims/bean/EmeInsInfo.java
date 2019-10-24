@@ -1,6 +1,7 @@
 package cn.edu.whut.msims.bean;
 
-import java.util.Date;
+import java.sql.Date;
+
 
 public class EmeInsInfo {
     private String instit_num;  //机构编号

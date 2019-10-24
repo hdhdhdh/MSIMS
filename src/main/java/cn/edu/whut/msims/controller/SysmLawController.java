@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-@RequestMapping("/sysm")
+//@RequestMapping("/sysm")
 public class SysmLawController {
     @Autowired
     private SysmLawService sysmLawService;

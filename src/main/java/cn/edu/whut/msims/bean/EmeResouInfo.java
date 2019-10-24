@@ -1,6 +1,7 @@
 package cn.edu.whut.msims.bean;
 
-import java.util.Date;
+import java.sql.Date;
+
 
 public class EmeResouInfo {
     private String resou_num;//物资编号

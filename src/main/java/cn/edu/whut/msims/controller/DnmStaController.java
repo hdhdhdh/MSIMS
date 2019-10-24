@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.sql.Date;
 import java.util.List;
 
@@ -72,6 +73,16 @@ public class DnmStaController {
         mvd.addObject("dmdates",dmds);
         mvd.setViewName("DnmStaTfind");
         return mvd;
+
+    }
+
+    @RequestMapping("/staCfind.do")
+    public ModelAndView dnmsta_Cfind(HttpServletRequest request,String site_kind){
+        ModelAndView mv=new ModelAndView();
+        String kind[]=request.getParameterValues(site_kind);
+        String kind1=kind[0];
+        System.out.print(kind1);
+        return mv;
 
     }
 
