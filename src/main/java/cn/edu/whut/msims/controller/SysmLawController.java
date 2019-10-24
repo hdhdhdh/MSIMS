@@ -20,12 +20,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-//@RequestMapping("/sysm")
+@RequestMapping("/sysm")
 public class SysmLawController {
     @Autowired
     private SysmLawService sysmLawService;
 
-  //  @RequestMapping("/main.do") //功能主界面
+    @RequestMapping("/main.do") //功能主界面
     public String sysm_main(){
 
         return "SysmMain";
@@ -89,8 +89,8 @@ public class SysmLawController {
 
     //更新安全生产法律法规
     @RequestMapping("/lawupdate.do")
-    public String updateLaw(SysmLawInfo sysmLawInfo,String law_num){
-        sysmLawService.updateLaw(sysmLawInfo,law_num);
+    public String updateLaw(SysmLawInfo sysmLawInfo){
+        sysmLawService.updateLaw(sysmLawInfo);
         return  "redirect:lawfindall.do";
     }
 

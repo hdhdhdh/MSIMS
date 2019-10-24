@@ -83,7 +83,6 @@ public class DnmStaController {
         String kind1=kind[0];
         System.out.print(kind1);
         return mv;
-
     }
 
 
