@@ -28,12 +28,12 @@
         <ul id="nav" class="nav clearfix">
             <li class="nLi on" style="border-left: 0;">
                 <h1>
-                    <a href="LxmExpireQual.jsp" target="_blank">公司资质证书预警</a>
+                    <a href="${pageContext.request.contextPath}/Lxm/expirequal.do" target="_blank">公司资质证书预警</a>
                 </h1>
             </li>
             <li class="nLi">
                 <h1>
-                    <a href="LxmQual-list.jsp" target="_blank">公司资质证书管理</a>
+                    <a href="${pageContext.request.contextPath}/Lxm/findAll.do" target="_blank">公司资质证书管理</a>
                 </h1>
             </li>
         </ul>
@@ -78,7 +78,7 @@
         </table>
     </div>
     <div class="expiring">
-        <table id="expiringdataList">
+        <%--<table id="expiringdataList">
             <caption>即将过期的公司资质证书信息</caption>
             <thead>
             <tr>
@@ -104,7 +104,7 @@
                 <td>${user.id}</td>
             </c:forEach>
             </tbody>
-        </table>
+        </table>--%>
     </div>
 </div>
 </body>
