@@ -25,7 +25,7 @@
     <li><a href="${pageContext.request.contextPath}/main/EmeDir.do">应急演练信息管理</a></li>
     <li><a href="${pageContext.request.contextPath}/main/EmePlan.do">应急预案信息管理</a></li>
     <li><a href="${pageContext.request.contextPath}/main/EmeResou.do">应急物资管理</a></li>
-    <li><a href="${pageContext.request.contextPath}/main/EmeRes.do">应急救援管理</a></li>
+    <li><a href="${pageContext.request.contextPath}/main/EmeRes.do">应急救援人员管理</a></li>
 </div>
 <div class ="section">
     <h1>欢迎hhhhhhhhhhhhhhhhhhhhh</h1>

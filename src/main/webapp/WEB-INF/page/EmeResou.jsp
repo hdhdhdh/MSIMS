@@ -5,6 +5,7 @@
   Time: 12:11
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
@@ -27,7 +28,7 @@
     <li><a href="${pageContext.request.contextPath}/resou/EmeResouupdate.do">修改应急物资信息</a></li>
 </div>
 <div class ="section">
-    <h1>欢迎hhhhhhhhhhhhhhhhhhhhh</h1>
+    <h1> </h1>
 </div>
 
 </body>
