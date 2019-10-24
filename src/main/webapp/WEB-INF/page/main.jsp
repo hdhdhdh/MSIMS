@@ -47,7 +47,7 @@
             </li>
             <li class="nLi">
                 <h1>
-                    <a href="#" target="_blank">应急救援信息管理</a>
+                    <a href="${pageContext.request.contextPath}/main/EmeMain.do" target="_blank">应急救援信息管理</a>
                 </h1>
             </li>
             <li class="nLi">

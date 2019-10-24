@@ -27,7 +27,7 @@
     <li><a href="${pageContext.request.contextPath}/resou/EmeResouupdate.do">修改应急物资信息</a></li>
 </div>
 <div class ="section">
-    <h1>欢迎hhhhhhhhhhhhhhhhhhhhh</h1>
+    <h1>欢迎</h1>
 </div>
 
 </body>

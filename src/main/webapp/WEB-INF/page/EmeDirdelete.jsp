@@ -28,7 +28,7 @@
     <li><a href="${pageContext.request.contextPath}/dir/toEmeDirupdate.do.do">修改应急演练信息</a></li>
 </div>
 <div class ="section">
-    <h1>欢迎hhhhhhhhhhhhhhhhhhhhh</h1>
+    <h1>欢迎</h1>
 </div>
 
 </body>

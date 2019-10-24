@@ -28,7 +28,7 @@
     <li><a href="${pageContext.request.contextPath}/main/EmeRes.do">应急救援人员管理</a></li>
 </div>
 <div class ="section">
-    <h1>欢迎hhhhhhhhhhhhhhhhhhhhh</h1>
+    <h1>欢迎</h1>
 </div>
 
 </body>
