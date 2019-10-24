@@ -8,7 +8,10 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -42,8 +45,12 @@ public class SysmLawController {
     }
 
     @RequestMapping("/tolawupdate.do")   //跳转更新记录界面
-    public  String sysmlaw_toupdate(){
-        return "SysmLawupdate";
+    public  ModelAndView sysmlaw_toupdate(String law_num){
+        ModelAndView mv=new ModelAndView();
+        SysmLawInfo sl= sysmLawService.findLawById(law_num);
+        mv.addObject("lawup",sl);
+        mv.setViewName("SysmLawupdate");
+        return mv;
     }
 
     //查询所有安全生产法律法规

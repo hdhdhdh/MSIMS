@@ -80,7 +80,7 @@ public class DnmStaController {
     public ModelAndView dnmsta_Cfind(HttpServletRequest request,String site_kind){
         ModelAndView mv=new ModelAndView();
         String kind[]=request.getParameterValues(site_kind);
-        String kind1=kind[0];
+        String kind1=kind[1];
         System.out.print(kind1);
         return mv;
     }

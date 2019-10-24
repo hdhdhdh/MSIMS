@@ -26,10 +26,13 @@ public class SysmPreveController {
     }
 
     @RequestMapping("/topreveupdate.do")   //跳转新增记录界面
-    public  String sysmpreve_toupdate(){
-        return "SysmPrevedate";
+    public  ModelAndView sysmpreve_toupdate(String preve_num){
+        ModelAndView mv=new ModelAndView();
+        SysmPreveInfo sp= sysmPreveService.findPreveById(preve_num);
+        mv.addObject("preveup",sp);
+        mv.setViewName("SysmPreveupdate");
+        return mv;
     }
-
     //查询所有双重预防机制文件
     @RequestMapping("/prevefindall.do")
     public ModelAndView findAllPreve(){

@@ -151,7 +151,7 @@
                 <td>${d.law_note}</td>
 
                 <td class="text-center">
-                    <a href="${pageContext.request.contextPath}/sysm/tolawupdate.do">更新</a>
+                    <a href="${pageContext.request.contextPath}/sysm/tolawupdate.do?law_num=${d.law_num}">更新</a>
                     <a href="${pageContext.request.contextPath}/sysm/lawdelete.do?law_num=${d.law_num}" >删除</a>
                 </td>
                </tr>

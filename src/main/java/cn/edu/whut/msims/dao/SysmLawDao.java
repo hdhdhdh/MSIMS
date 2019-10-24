@@ -24,4 +24,6 @@ public interface SysmLawDao {
 
     @Update("UPDATE tb_law SET law_class=#{law_class},law_name=#{law_name},law_sdate=#{law_sdate},law_edate=#{law_edate},law_dep=#{law_dep},law_checker=#{law_checker},law_checktime=#{law_checktime},law_note=#{law_note},admin_id=#{admin_id},law_date=#{law_date} WHERE law_num=#{law_num}")
     public int updateLaw(SysmLawInfo sysmLawInfo);//更新安全生产法律法规
+
+
 }

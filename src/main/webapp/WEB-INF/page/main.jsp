@@ -42,7 +42,7 @@
             </li>
             <li class="nLi">
                 <h1>
-                    <a href="#" target="_blank">作业场所危害检测</a>
+                    <a href="${pageContext.request.contextPath}/dnm/main.do" target="_blank">作业场所危害检测</a>
                 </h1>
             </li>
             <li class="nLi">
