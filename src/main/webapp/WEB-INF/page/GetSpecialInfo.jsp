@@ -40,6 +40,7 @@
             <td width="300px">所属员工</td>
             <td width="150px">有效日期</td>
             <td width="150px">证书类别</td>
+            <td width="150px">操作 </td>
         </tr>
 
         </thead>
@@ -49,6 +50,7 @@
             <td>${s.employ_num}</td>
             <td>${s.special_expiry_date}</td>
             <td>${s.special_class}</td>
+            <td> <a href="/tospecialpic.do?special_id=${s.special_id}">查看</a></td>
         </td>
         </c:forEach>
         </tbody>

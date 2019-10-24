@@ -8,8 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
+import java.io.File;
 import java.awt.*;
+import java.io.FileOutputStream;
 import java.sql.Date;
 import java.util.List;
 
@@ -24,10 +27,24 @@ public class SpecialController
         return "AdddSpecialInfo";
     }
     @RequestMapping("addspecial.do")
-    public String addSpecial (SpecialInfo specialInfo)
+    public String addSpecial (SpecialInfo specialInfo,@RequestParam("filebody") MultipartFile file)
     {
         System.out.println(specialInfo.toString());
         specialService.addSpecial(specialInfo);
+        try {
+            String fileUploadPath = "D:\\upload\\special\\";
+
+            File uploadedFile = new File(fileUploadPath,specialInfo.getSpecial_id());
+            uploadedFile.createNewFile();
+            FileOutputStream fileOutputStream = new FileOutputStream(uploadedFile);
+            fileOutputStream.write(file.getBytes());
+            fileOutputStream.close();
+
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+            System.out.println("文件保存失败");
+        }
         return "AdddSpecialInfo";
     }
     @RequestMapping("/getspecial.do")
@@ -49,5 +66,11 @@ public class SpecialController
         System.out.println(specialInfoList.toString());
         m.addAttribute("all",specialInfoList);
         return "GetExpirySpecialInfo";
+    }
+    @RequestMapping("tospecialpic.do")
+    public String toSpecialPic(String special_id,Model m)
+    {
+        m.addAttribute("picname",special_id+".jpg");
+        return "SpecialPic";
     }
 }
