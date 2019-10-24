@@ -9,5 +9,5 @@ public interface IEmeDirService {
     public List<EmeDirInfo> findAllDir();
     public EmeDirInfo findDirById(String drill_num);
     public  void addEmeDir(EmeDirInfo emeDirInfo);
-    public void delDir(String law_num);
+    public void delDir(String drill_num);
 }
