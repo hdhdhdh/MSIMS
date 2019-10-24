@@ -10,9 +10,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
-import java.io.File;
+
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
 import java.awt.*;
-import java.io.FileOutputStream;
 import java.sql.Date;
 import java.util.List;
 
@@ -68,9 +69,24 @@ public class SpecialController
         return "GetExpirySpecialInfo";
     }
     @RequestMapping("tospecialpic.do")
-    public String toSpecialPic(String special_id,Model m)
-    {
-        m.addAttribute("picname",special_id+".jpg");
-        return "SpecialPic";
+    public String toSpecialPic(String special_id, Model m, HttpServletResponse response) throws IOException {
+        // 文件地址，真实环境是存放在数据库中的
+        File file = new File("D:\\upload\\special\\"+special_id+".jpg");
+        // 穿件输入对象
+        FileInputStream fis = new FileInputStream(file);
+        // 设置相关格式
+        response.setContentType("application/force-download");
+        // 设置下载后的文件名以及header
+        response.addHeader("Content-disposition", "attachment;fileName=" + special_id+".jpg");
+        // 创建输出对象
+        OutputStream os = response.getOutputStream();
+        // 常规操作
+        byte[] buf = new byte[1024];
+        int len = 0;
+        while((len = fis.read(buf)) != -1) {
+            os.write(buf, 0, len);
+        }
+        fis.close();
+        return "GetSpecialInfo";
     }
 }
