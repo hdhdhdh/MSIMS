@@ -17,4 +17,5 @@ public interface IDnmDnService {
     public void updateDnmDn(DnmDnInfo dnmDnInfo);
     public  List<DnmDnInfo> dnfindbydateid(String site_id,Date duno_date);
     public  List<DnmDnInfo> dnfindbydates(Date date1,Date date2);
+    public List<DnmDnInfo> finall();
 }

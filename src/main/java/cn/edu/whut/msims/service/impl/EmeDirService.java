@@ -29,8 +29,8 @@ public class EmeDirService implements IEmeDirService {
          emeDirDao.addEmeDir(emeDirInfo);
     }
     @Override
-    public void delDir(String law_num){
-        emeDirDao.deleteEmeDir(law_num);
+    public void delDir(String dirll_num){
+        emeDirDao.deleteEmeDir(dirll_num);
     }
 
 }

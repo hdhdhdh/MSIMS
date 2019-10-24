@@ -27,12 +27,12 @@
         <ul id="nav" class="nav clearfix">
             <li class="nLi on" style="border-left: 0;">
                 <h1>
-                    <a href="LxmQual.jsp" target="_blank">企业资质证书管理</a>
+                    <a href="${pageContext.request.contextPath}/Lxm/qual.do" target="_blank">企业资质证书管理</a>
                 </h1>
             </li>
             <li class="nLi">
                 <h1>
-                    <a href="#" target="_blank">安全制度与体系管理</a>
+                    <a href="${pageContext.request.contextPath}/sysm/main.do" target="_blank">安全制度与体系管理</a>
                 </h1>
             </li>
             <li class="nLi">
@@ -42,12 +42,12 @@
             </li>
             <li class="nLi">
                 <h1>
-                    <a href="#" target="_blank">作业场所危害检测</a>
+                    <a href="${pageContext.request.contextPath}/dnm/main.do" target="_blank">作业场所危害检测</a>
                 </h1>
             </li>
             <li class="nLi">
                 <h1>
-                    <a href="#" target="_blank">应急救援信息管理</a>
+                    <a href="${pageContext.request.contextPath}/main/EmeMain.do" target="_blank">应急救援信息管理</a>
                 </h1>
             </li>
             <li class="nLi">

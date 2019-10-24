@@ -79,11 +79,8 @@ public class DnmStaController {
     @RequestMapping("/staCfind.do")
     public ModelAndView dnmsta_Cfind(HttpServletRequest request,String site_kind){
         ModelAndView mv=new ModelAndView();
-        String kind[]=request.getParameterValues(site_kind);
-        String kind1=kind[0];
-        System.out.print(kind1);
-        return mv;
 
+        return mv;
     }
 
 

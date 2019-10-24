@@ -118,16 +118,16 @@
     <div id='main'>
         <h2>更新安全生产法律法规</h2>
 
-        <form method="post" action="${pageContext.request.contextPath}/sysm/lawupdate.do?law_num=${d.law_num}">
-<%--            <p>发文字号:&nbsp;<input size="20px" TYPE="text" NAME="law_num" id="law_num" ></p>--%>
-            <p>法律法规类别:&nbsp;<input size="10px" TYPE="text" NAME="law_class" id="law_class" >
-                &nbsp;&nbsp;&nbsp;法律法规标准名称:&nbsp;<input size="10px" TYPE="text" NAME="law_name" id="law_name" >
+        <form method="post" action="${pageContext.request.contextPath}/sysm/lawupdate.do">
+            <p>发文字号:&nbsp;<input size="20px" TYPE="text" NAME="law_num" id="law_num" value="${lawup.law_num}" readonly="true"></p>
+            <p>法律法规类别:&nbsp;<input size="20px" TYPE="text" NAME="law_class" id="law_class" value="${lawup.law_class}" >
+                &nbsp;&nbsp;&nbsp;法律法规标准名称:&nbsp;<input size="20px" TYPE="text" NAME="law_name" id="law_name" value="${lawup.law_name}" >
                 &nbsp;&nbsp;&nbsp;</p>
-            <p>颁布部门:&nbsp;<input size="3px" TYPE="text" NAME="law_dep" id="law_dep" >
-                颁布时间:&nbsp;<input size="3px" TYPE="date" NAME="law_sdate" id="law_sdate" >
-                &nbsp;&nbsp;&nbsp;实施时间:&nbsp;<input size="3px" TYPE="date" NAME="law_edate" id="law_edate" >&nbsp;&nbsp;&nbsp;</p>
-            <p>审核人:&nbsp;<input size="8px" TYPE="text" NAME="law_checker" id="law_checker" >
-                审核时间:&nbsp;<input size="3px" TYPE="date" NAME="law_checktime" id="law_checktime" ></p>
+            <p>颁布部门:&nbsp;<input size="3px" TYPE="text" NAME="law_dep" id="law_dep" value="${lawup.law_dep}" >
+                颁布时间:&nbsp;<input size="3px" TYPE="date" NAME="law_sdate" id="law_sdate" value="${lawup.law_sdate}">
+                &nbsp;&nbsp;&nbsp;实施时间:&nbsp;<input size="3px" TYPE="date" NAME="law_edate" id="law_edate" value="${lawup.law_edate}">&nbsp;&nbsp;&nbsp;</p>
+            <p>审核人:&nbsp;<input size="8px" TYPE="text" NAME="law_checker" id="law_checker" value="${lawup.law_checker}">
+                审核时间:&nbsp;<input size="8px" TYPE="date" NAME="law_checktime" id="law_checktime" value="${lawup.law_checktime}"></p>
             <p>上传人:&nbsp;<input size="8px" TYPE="text" NAME="admin_id" id="admin_id" >
                 上传时间:&nbsp;<input size="10px" TYPE="date" NAME="law_date" id="law_date" ></p>
             <p>备注:&nbsp;<input size="20px" TYPE="text" NAME="law_note" id="law_note" ></p>

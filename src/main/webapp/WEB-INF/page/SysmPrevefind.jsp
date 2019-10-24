@@ -148,7 +148,7 @@
                 <td>${d.preve_date}</td>
 
                 <td class="text-center">
-                    <a href="${pageContext.request.contextPath}/sysm/topreveupdate.do" >更新</a>
+                    <a href="${pageContext.request.contextPath}/sysm/topreveupdate.do?preve_num=${d.preve_num}" >更新</a>
                     <a href="${pageContext.request.contextPath}/sysm/prevedelete.do?preve_num=${d.preve_num}" >删除</a>
                 </td>
                 </tr>

@@ -1,27 +1,18 @@
 package cn.edu.whut.msims.controller;
 
-import cn.edu.whut.msims.bean.SysmLawInfo;
 import cn.edu.whut.msims.bean.SysmPreveInfo;
 import cn.edu.whut.msims.service.impl.SysmPreveService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.InputStreamResource;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-//@RequestMapping("/sysm")
+@RequestMapping("/sysm")
 public class SysmPreveController {
     @Autowired
     private SysmPreveService sysmPreveService;
@@ -35,10 +26,13 @@ public class SysmPreveController {
     }
 
     @RequestMapping("/topreveupdate.do")   //跳转新增记录界面
-    public  String sysmpreve_toupdate(){
-        return "SysmPrevedate";
+    public  ModelAndView sysmpreve_toupdate(String preve_num){
+        ModelAndView mv=new ModelAndView();
+        SysmPreveInfo sp= sysmPreveService.findPreveById(preve_num);
+        mv.addObject("preveup",sp);
+        mv.setViewName("SysmPreveupdate");
+        return mv;
     }
-
     //查询所有双重预防机制文件
     @RequestMapping("/prevefindall.do")
     public ModelAndView findAllPreve(){

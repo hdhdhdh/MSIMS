@@ -29,7 +29,7 @@ public class SysmLawService implements ISysmLawService {
         sysmLawDao.delLaw(law_num);
     }
     @Override
-    public boolean updateLaw(SysmLawInfo sysmLawInfo,String law_num){
-        return sysmLawDao.updateLaw(sysmLawInfo,law_num)>0 ? true:false;
+    public boolean updateLaw(SysmLawInfo sysmLawInfo){
+        return sysmLawDao.updateLaw(sysmLawInfo)>0 ? true:false;
     }
 }

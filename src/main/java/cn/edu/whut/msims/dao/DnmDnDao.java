@@ -34,5 +34,8 @@ public interface DnmDnDao {
     @Select("select * from tb_duno where duno_date between #{date1} and #{date2} ")   //根据时间段查询
     public  List<DnmDnInfo> dnfindbydates(Date date1,Date date2);
 
+    @Select("select * from tb_duno")
+    public List<DnmDnInfo> finall();
+
 
 }

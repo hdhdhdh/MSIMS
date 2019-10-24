@@ -43,6 +43,11 @@ public class DnmDnService implements IDnmDnService {
     }
 
     @Override
+    public List<DnmDnInfo> finall() {
+        return dnmDnDao.finall();
+    }
+
+    @Override
     public List<DnmDnInfo> findidDnmDn(String site_id) {
         return dnmDnDao.findidDnmDn(site_id);
     }

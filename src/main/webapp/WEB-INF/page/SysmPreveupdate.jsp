@@ -109,24 +109,24 @@
     <div id='nav'>
         <ul>
 
-            <li><a href="SysmLawAdd.html">新增双重预防机制文件</a> </li>
-            <li><a href="SysmLawFind.html">查询双重预防机制文件</a> </li>
-            <li><a href="SysmMain.html">返回至主界面</a> </li>
+            <li><a href="${pageContext.request.contextPath}/sysm/topreveadd.do">新增双重预防机制文件</a> </li>
+            <li><a href="">查询双重预防机制文件</a> </li>
+            <li><a href="${pageContext.request.contextPath}/sysm/main.do">返回至主界面</a> </li>
         </ul>
     </div>
 
     <div id='main'>
         <h2>更新双重预防机制文件</h2>
 
-        <form method="post" action="">
-            <p>发文字号:&nbsp;<input size="20px" TYPE="text" NAME="preve_num" id="preve_num" ></p>
-            <p>&nbsp;&nbsp;&nbsp;文件名称:&nbsp;<input size="10px" TYPE="text" NAME="preve_name" id="preve_name" >&nbsp;&nbsp;&nbsp;</p>
-            <p>颁布部门:&nbsp;<input size="3px" TYPE="text" NAME="preve_dep" id="preve_dep" >
-                颁布时间:&nbsp;<input size="3px" TYPE="date" NAME="preve_sdate" id="preve_sdate" >
-                &nbsp;&nbsp;&nbsp;实施时间:&nbsp;<input size="3px" TYPE="date" NAME="preve_edate" id="preve_edate" >&nbsp;&nbsp;&nbsp;</p>
-            <p>上传文件:&nbsp;<input size="8px" TYPE="text" NAME="preve_path" id="preve_path" ></p>
-            <p>上传人:&nbsp;<input size="8px" TYPE="text" NAME="admin_id" id="admin_id" >
-                上传时间:&nbsp;<input size="10px" TYPE="date" NAME="preve_date" id="preve_date" ></p>
+        <form method="post" action="${pageContext.request.contextPath}/sysm/preveupdate.do">
+            <p>发文字号:&nbsp;<input size="20px" TYPE="text" NAME="preve_num" id="preve_num" value="${preveup.preve_num}" ></p>
+            <p>&nbsp;&nbsp;&nbsp;文件名称:&nbsp;<input size="10px" TYPE="text" NAME="preve_name" id="preve_name" value="${preveup.preve_name}">&nbsp;&nbsp;&nbsp;</p>
+            <p>颁布部门:&nbsp;<input size="3px" TYPE="text" NAME="preve_dep" id="preve_dep" value="${preveup.preve_dep}">
+                颁布时间:&nbsp;<input size="3px" TYPE="date" NAME="preve_sdate" id="preve_sdate" value="${preveup.preve_sdate}">
+                &nbsp;&nbsp;&nbsp;实施时间:&nbsp;<input size="3px" TYPE="date" NAME="preve_edate" id="preve_edate" value="${preveup.preve_edate}" >&nbsp;&nbsp;&nbsp;</p>
+            <p>上传文件:&nbsp;<input size="8px" TYPE="text" NAME="preve_path" id="preve_path" value="${preveup.preve_path}"></p>
+            <p>上传人:&nbsp;<input size="8px" TYPE="text" NAME="admin_id" id="admin_id" value="${preveup.admin_id}">
+                上传时间:&nbsp;<input size="10px" TYPE="date" NAME="preve_date" id="preve_date" value="${preveup.preve_date}"></p>
             <input type="submit" value="修&nbsp;&nbsp;改" name="preve_add" id="preve_add"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="重&nbsp;&nbsp;置">
 
         </form>
