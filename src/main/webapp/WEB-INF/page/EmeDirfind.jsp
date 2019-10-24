@@ -51,7 +51,7 @@
                 <td>${d.dirll_path}</td>
 
                 <td class="text-center">
-                    <a href="${pageContext.request.contextPath}/dir/EmeDirupdate.do">更新</a>
+                    <a href="${pageContext.request.contextPath}/dir/toEmeDirupdate.do">更新</a>
                     <a href="${pageContext.request.contextPath}/dir/Emedelete.do?drill_num=${d.dirll_num}" >删除</a>
                 </td>
             </tr>

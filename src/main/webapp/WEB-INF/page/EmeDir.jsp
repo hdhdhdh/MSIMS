@@ -26,7 +26,7 @@
     <li><a href="${pageContext.request.contextPath}/dir/toEmeDiradd.do">增加应急演练信息</a></li>
     <li><a href="${pageContext.request.contextPath}/dir/toEmeDirdelete.do">删除应急演练信息</a></li>
     <li><a href="${pageContext.request.contextPath}/dir/Emefindall.do">查找应急演练信息</a></li>
-    <li><a href="${pageContext.request.contextPath}/dir/toEmeDirupdate.do.do">修改应急演练信息</a></li>
+    <li><a href="${pageContext.request.contextPath}/dir/toEmeDirupdate.do">修改应急演练信息</a></li>
 </div>
 <div class ="section">
     <h1>欢迎</h1>

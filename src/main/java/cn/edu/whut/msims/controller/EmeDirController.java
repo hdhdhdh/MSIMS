@@ -52,9 +52,8 @@ public class EmeDirController {
     }
 
     @RequestMapping("/dirfind.do")
-    public String findDirById(String law_num,Model model){
+    public String findDirById(String drill_num,Model model){
         EmeDirInfo EmeDirInfo=null;
-        System.out.println(law_num);
         List<EmeDirInfo> EmeDirInfos=new ArrayList<EmeDirInfo>();
         //EmeDirInfo=emeDirService.findLawById(law_num);
         if(EmeDirInfo!=null){
@@ -68,7 +67,13 @@ public class EmeDirController {
     }
     @RequestMapping("/toEmeDirupdate.do")
     public String update() {
-        return "EmeDirupdat";
+        return "EmeDirupdate";
+    }
+
+    @RequestMapping("/EmeDirupdate.do")
+    public String updateDir(EmeDirInfo emeDirInfo){
+        emeDirService.updateEmeDir(emeDirInfo);
+        return  "redirect:Emefindall.do";
     }
 
 }
